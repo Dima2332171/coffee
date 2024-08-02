@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kelly Slab", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d7c2af;
+}
+
+.custom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #A8B9C0;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+}
+
+.contacts img {
+    margin-right: 10px;
+    height: 24px;
+}
+
+.main-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    height: 830px;
+}
+
+.sidebar{
+    width: 22%;
+    margin-right: 50px;
+    height: 830px;
+
+}
+
+.image-block{
+    width: 78%;
+
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.sidebar-card{
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 220px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #A8B9C0;
+}
+
+.sidebar-image img:hover{
+    transform: scale(1.3);
+}
+
+.block{
+    display: flex;
+}
+
+.image-row{
+    display: flex;
+}
+.image-block img{
+    margin: 2px;
+}
+
+.background-container {
+    position: relative;
+    height: 500px;
+    background: url('../assets/bg-coffee.png') no-repeat center center;
+    background-size: cover;
+    margin-top: 70px;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust color as needed */
+    padding: 20px;
+}
+
+.section{
+    width: 500px;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.two-section{
+    display: flex;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.button-item {
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+}
