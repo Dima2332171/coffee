@@ -163,9 +163,6 @@ img{
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .modal-content {
@@ -300,6 +297,14 @@ img{
     background-color: #fff;
     transform: rotateY(180deg);
 }
+.contact-button{
+    text-align: center;
+}
+
+.contact-button a{
+    text-decoration: none;
+    color: black;
+}
 
 .front img {
     width: 100%;
@@ -316,4 +321,27 @@ img{
 
 .back p {
     margin: 0;
+}
+
+.color-selection {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.color-selection .color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cup-image {
+    width: 150px;
+    height: auto;
+}
+
+.cup-info {
+    margin-top: 16px;
 }
