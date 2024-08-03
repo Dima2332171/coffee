@@ -152,3 +152,168 @@ img{
     text-align: center;
     font-size: 18px;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #FAEBD7;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    margin: 5px 0;
+}
+
+.qr-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.qr-code img {
+    width: 150px;
+    height: 150px;
+}
+
+.qr-code p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.clients-section {
+    text-align: center;
+}
+
+.clients-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.clients-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo-client img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #000;
+}
+
+
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tile {
+    margin: 10px;
+    width: 250px;
+    height: 310px;
+    perspective: 1000px;
+
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: scale3d(0.9,0.9,1);
+    transition: transform 0.5s cubic-bezier(.25,.75,.25,1.25);
+    position: relative;
+    box-shadow: 0px 30px 50px -30px rgba(0,0,0,0.35);
+    border-radius: 5px;
+}
+
+.tile:hover .card {
+    transform: scale3d(1,1,1) rotateY(180deg);
+}
+
+.side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: inherit;
+}
+
+.front {
+    background-color: #fff;
+}
+
+.back {
+    background-color: #fff;
+    transform: rotateY(180deg);
+}
+
+.front img {
+    width: 100%;
+    height: auto;
+}
+
+.back .description {
+    padding: 20px;
+}
+
+.back h2 {
+    margin: 0 0 10px 0;
+}
+
+.back p {
+    margin: 0;
+}
