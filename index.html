@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>KraftPack | UA</title>
 </head>
 <body>
 <header>
@@ -21,7 +22,7 @@
             </div>
             <div class="contacts">
                 <img src="assets/call-calling.svg" alt="call">
-                Контакти
+                <a href="tel:+380951546753">Контакти</a>
             </div>
         </div>
     </div>
@@ -29,99 +30,156 @@
 
 <main>
     <div class="custom-container">
-<!--        <div class="main-content">-->
-<!--            <div class="sidebar">-->
-<!--                <div class="title">-->
-<!--                    <h3>КАТАЛОГ</h3>-->
-<!--                </div>-->
-<!--                <div class="sidebar-card">-->
-<!--                    <div class="sidebar-image">-->
-<!--                        <img src="assets/Group%203.png" alt="sidebar_image1">-->
-<!--                    </div>-->
-<!--                    <div class="sidebar-text">-->
-<!--                        <p>Пакети паперові для випічки</p>-->
-<!--                    </div>-->
-<!--                </div>-->
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="title">
+                    <h3>КАТАЛОГ</h3>
+                </div>
+                <div class="sidebar-card">
+                    <div class="sidebar-image">
+                        <img src="assets/Group%203.png" alt="sidebar_image1">
+                    </div>
+                    <div class="sidebar-text">
+                        <p>Пакети паперові для випічки</p>
+                    </div>
+                </div>
 
-<!--                <div class="sidebar-card">-->
-<!--                    <div class="sidebar-image">-->
-<!--                        <img src="assets/Intersect.png" alt="sidebar_image2">-->
-<!--                    </div>-->
-<!--                    <div class="sidebar-text">-->
-<!--                        <p>Стаканчики для напоїв</p>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <div class="sidebar-card">
+                    <div class="sidebar-image">
+                        <img src="assets/Intersect.png" alt="sidebar_image2">
+                    </div>
+                    <div class="sidebar-text">
+                        <p>Стаканчики для напоїв</p>
+                    </div>
+                </div>
 
-<!--                <div class="sidebar-card">-->
-<!--                    <div class="sidebar-image">-->
-<!--                        <img src="assets/1.png" alt="sidebar_image3">-->
-<!--                    </div>-->
-<!--                    <div class="sidebar-text">-->
-<!--                        <p>Аксесуари для напоїв</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="image-block">-->
-<!--                <div class="title">-->
-<!--                    <h3>ВСЕ, ЩО ПОТРІБНО ДЛЯ ТВОЄЇ КАВ’ЯРНІ ТУТ</h3>-->
-<!--                </div>-->
-<!--                <div class="block">-->
-<!--                    <div class="grid-img">-->
-<!--                        <div>-->
-<!--                            <img src="assets/img1.png" alt="image_1">-->
-<!--                            <div class="image-row">-->
-<!--                                <img src="assets/img2.png" alt="image_2">-->
-<!--                                <img src="assets/img6.png" alt="image_6">-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="grid-img">-->
-<!--                        <img src="assets/img3.png" alt="image_3">-->
-<!--                        <div class="image-row">-->
-<!--                            <img src="assets/img7.png" alt="image_2">-->
-<!--                            <img src="assets/img5.png" alt="image_6">-->
-<!--                        </div>-->
-<!--                        <img src="assets/img4.png" alt="image_4">-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
+                <div class="sidebar-card">
+                    <div class="sidebar-image">
+                        <img src="assets/1.png" alt="sidebar_image3">
+                    </div>
+                    <div class="sidebar-text">
+                        <p>Аксесуари для напоїв</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image-block">
+                <div class="title">
+                    <h3>ВСЕ, ЩО ПОТРІБНО ДЛЯ ТВОЄЇ КАВ’ЯРНІ ТУТ</h3>
+                </div>
+                <div class="block">
+                    <div class="grid-img">
+                        <div>
+                            <img src="assets/img1.png" alt="image_1">
+                            <div class="image-row">
+                                <img src="assets/img2.png" alt="image_2">
+                                <img src="assets/img6.png" alt="image_6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-img">
+                        <img src="assets/img3.png" alt="image_3">
+                        <div class="image-row">
+                            <img src="assets/img7.png" alt="image_2">
+                            <img src="assets/img5.png" alt="image_6">
+                        </div>
+                        <img src="assets/img4.png" alt="image_4">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<!--        <div class="second-part">-->
-<!--            <div class="background-container">-->
-<!--                <div class="overlay-content">-->
-<!--                    <h2>Твой контент здесь</h2>-->
-<!--                    <p>Этот текст и блоки будут размещены поверх фонового изображения</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="question-block">-->
-<!--            <div class="title">-->
-<!--                <h3>ВІДПОВІДІ НА ЗАПИТАННЯ</h3>-->
-<!--            </div>-->
-<!--            <div class="buttons-container">-->
-<!--                <div class="button-item">Оплата і доставка</div>-->
-<!--                <div class="button-item">Брендована продукція</div>-->
-<!--                <div class="button-item">Терміни Виготовлення</div>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="clients-block">-->
-<!--            <div class="title">-->
-<!--                <h2>НАШІ КЛІЄНТИ</h2>-->
-<!--            </div>-->
-<!--            <div class="clients-logos">-->
-<!--                <div class="logo-client"><img src="assets/client-1.png" alt="ПЕРОН"></div>-->
-<!--                <div class="logo-client"><img src="assets/client-2.png" alt="Клара"></div>-->
-<!--                <div class="logo-client"><img src="assets/client-3.png" alt="ФАБРИКА КАВИ"></div>-->
-<!--                <div class="logo-client"><img src="assets/client-4.png" alt="bulochna"></div>-->
-<!--                <div class="logo-client"><img src="assets/client-5.png" alt="Bakery"></div>-->
-<!--                <div class="logo-client"><img src="assets/client-6.png" alt="ШО ТУТ?"></div>-->
-<!--                <div class="logo-client"><img src="assets/client-7.png" alt="Caffeine"></div>-->
-<!--            </div>-->
-<!--        </div>-->
-
+        <div class="second-part">
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="false" space-between="30"
+                              centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                <swiper-slide><img src="assets/Columbia.png" alt="Columbia"></swiper-slide>
+                <swiper-slide><img src="assets/burundi_kayanza.png" alt="burundi"></swiper-slide>
+                <swiper-slide><img src="assets/Brazil.png" alt="Brazil"></swiper-slide>
+                <div class="autoplay-progress" slot="container-end">
+                    <svg viewBox="0 0 48 48">
+                        <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span>
+                </div>
+            </swiper-container>
+        </div>
+        <div class="question-block">
+            <div class="title">
+                <h3>ВІДПОВІДІ НА ЗАПИТАННЯ</h3>
+            </div>
+            <div class="buttons-container">
+                <div class="one-line">
+                    <div class="pay">
+                        <div class="button-item" onclick="expandButton(this)">
+                            <span class="button-title">Оплата і доставка</span>
+                            <div class="button-content">
+                                <p>Самовіз Пн-Пт БЕЗКОШТОВНИЙ</p>
+                                <p>Доставка по м.Черкаси БЕЗКОШТОВНА</p>
+                                <p>Доставка в інші регіони здійснюється ЗА РАХУНОК КЛІЄНТА</p>
+                                <p>Доставка здійснюється за умови повної або часткової передплати</p>
+                                <p>*При отриманні посилки обов'язково перевіряйте її зміст у присутності компанії
+                                    перевізника.</p>
+                                <p>Замовлення автоматично повертається відправнику через 5 робочих днів (якщо замовник
+                                    не забрав посилку).</p>
+                                <p>Номер накладної для відстеження переміщення посилки буде відправлено в
+                                    смс-повідомленні після відправки замовлення.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand">
+                        <div class="button-item" onclick="expandButton(this)">
+                            <span class="button-title">Брендована продукція</span>
+                            <div class="button-content">
+                                <div class="item">
+                                    <div class="text">Паперові двошарові станканчики 175/250/400мл<br><span
+                                            class="highlight">від 6 тис. шт.</span></div>
+                                </div>
+                                <div class="item">
+                                    <div class="text">Паперові пакети індивідуального пакування<br><span
+                                            class="highlight">від 10 тис. шт.</span></div>
+                                </div>
+                                <div class="item">
+                                    <div class="text">Цукор в стіках по 5 грам<br><span class="highlight">від 40 тис. шт.</span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="text">Дерев’яні мішалки в індивідуальних упаковках<br><span
+                                            class="highlight">від 40 тис. шт.</span></div>
+                                </div>
+                                <div class="item">
+                                    <div class="text">Трубочки гофровані або фреш в індивідуальний уп.<br><span
+                                            class="highlight">від 4 тис. шт.</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-line">
+                    <div class="button-item" onclick="expandButton(this)">
+                        <span class="button-title">Терміни Виготовлення</span>
+                        <div class="button-content">
+                            <p>Виготовлення брендованої продукції займає до 2-х тижнів після узгодження дизайну</p>
+                            <p class="note">*Ви можете скористатись послугами нашого дизайнера або надати готовий
+                                дизайн-проект</p>
+                            <p>Відправка НЕ брендованої продукції здійснюється на наступний день після оплати
+                                замовлення( за умови наявності товару)</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clients-block">
+            <div class="title">
+                <h2>НАШІ КЛІЄНТИ</h2>
+            </div>
+            <div class="clients-logos">
+                <div class="logo-client"><img src="assets/client-1.png" alt="ПЕРОН"></div>
+                <div class="logo-client"><img src="assets/client-2.png" alt="Клара"></div>
+                <div class="logo-client"><img src="assets/client-3.png" alt="ФАБРИКА КАВИ"></div>
+                <div class="logo-client"><img src="assets/client-4.png" alt="bulochna"></div>
+                <div class="logo-client"><img src="assets/client-5.png" alt="Bakery"></div>
+                <div class="logo-client"><img src="assets/client-6.png" alt="ШО ТУТ?"></div>
+                <div class="logo-client"><img src="assets/client-7.png" alt="Caffeine"></div>
+            </div>
+        </div>
         <div class="catalog-block">
             <div class="title">
                 <h2>КАТАЛОГ</h2>
@@ -295,103 +353,104 @@
                 </div>
             </div>
 
-<!--            <h2>Стаканчики для напоїв</h2>-->
-<!--            <div class="tiles">-->
-<!--                <div class="tile">-->
-<!--                    <div class="card">-->
-<!--                        <div class="side front">-->
-<!--                            <div class="color-selection">-->
-<!--                                <span class="color" style="background-color: #D7DF01;" data-color="yellow"></span>-->
-<!--                                <span class="color" style="background-color: #3B170B;" data-color="brown"></span>-->
-<!--                                <span class="color" style="background-color: #0B610B;" data-color="green"></span>-->
-<!--                                <span class="color" style="background-color: #292421;" data-color="black"></span>-->
-<!--                                <span class="color" style="background-color: #088A85;" data-color="cyan"></span>-->
-<!--                                <span class="color" style="background-color: #8A0808;" data-color="red"></span>-->
-<!--                            </div>-->
-<!--                            <img src="assets/cup-red.png" height="201" width="201" alt="Стаканчик"/>-->
-<!--                            <div class="cup-info">-->
-<!--                                <p>Стакан гофрований</p>-->
-<!--                                <p>110мл/175мл/275мл/400мл</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="side back">-->
-<!--                            <div class="description">-->
-<!--                                <ul>-->
-<!--                                    <li>Щільність 40-50 г/м²</li>-->
-<!--                                    <li>З власним дизайном</li>-->
-<!--                                    <li>Брендовані від 10000 шт.</li>-->
-<!--                                    <li>100 шт/упаковка</li>-->
-<!--                                </ul>-->
-<!--                                <div class="contact-button">-->
-<!--                                    <button>Зв'язатись</button>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="tile">-->
-<!--                    <div class="card">-->
-<!--                        <div class="side front">-->
-<!--                            <img src="assets/catalog-6.png" alt="Package 2">-->
 
-<!--                        </div>-->
-<!--                        <div class="side back">-->
-<!--                            <div class="description">-->
-<!--                                <ul>-->
-<!--                                    <li>Щільність 40-50 г/м²</li>-->
-<!--                                    <li>З власним дизайном</li>-->
-<!--                                    <li>Брендовані від 10000 шт.</li>-->
-<!--                                    <li>100 шт/упаковка</li>-->
-<!--                                </ul>-->
-<!--                                <div class="contact-button">-->
-<!--                                    <button>Зв'язатись</button>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="tile">-->
-<!--                    <div class="card">-->
-<!--                        <div class="side front">-->
-<!--                            <img src="assets/catalog-7.png" alt="Package 3">-->
-<!--                        </div>-->
-<!--                        <div class="side back">-->
-<!--                            <div class="description">-->
-<!--                                <ul>-->
-<!--                                    <li>Щільність 40-50 г/м²</li>-->
-<!--                                    <li>З власним дизайном</li>-->
-<!--                                    <li>Брендовані від 10000 шт.</li>-->
-<!--                                    <li>100 шт/упаковка</li>-->
-<!--                                </ul>-->
-<!--                                <div class="contact-button">-->
-<!--                                    <button>Зв'язатись</button>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="tile">-->
-<!--                    <div class="card">-->
-<!--                        <div class="side front">-->
-<!--                            <img src="assets/catalog-8.png" alt="Package 4">-->
-<!--                        </div>-->
-<!--                        <div class="side back">-->
-<!--                            <div class="description">-->
-<!--                                <ul>-->
-<!--                                    <li>Щільність 40-50 г/м²</li>-->
-<!--                                    <li>З власним дизайном</li>-->
-<!--                                    <li>Брендовані від 10000 шт.</li>-->
-<!--                                    <li>100 шт/упаковка</li>-->
-<!--                                </ul>-->
-<!--                                <div class="contact-button">-->
-<!--                                    <button>Зв'язатись</button>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!---->
+            <!--                    <h2>Стаканчики для напоїв</h2>-->
+            <!--                    <div class="tiles">-->
+            <!--                        <div class="tile">-->
+            <!--                            <div class="card">-->
+            <!--                                <div class="side front">-->
+            <!--                                    <div class="color-selection">-->
+            <!--                                        <span class="color" style="background-color: #D7DF01;" data-color="yellow"></span>-->
+            <!--                                        <span class="color" style="background-color: #3B170B;" data-color="brown"></span>-->
+            <!--                                        <span class="color" style="background-color: #0B610B;" data-color="green"></span>-->
+            <!--                                        <span class="color" style="background-color: #292421;" data-color="black"></span>-->
+            <!--                                        <span class="color" style="background-color: #088A85;" data-color="cyan"></span>-->
+            <!--                                        <span class="color" style="background-color: #8A0808;" data-color="red"></span>-->
+            <!--                                    </div>-->
+            <!--                                    <img src="assets/cup-red.png" height="201" width="201" alt="Стаканчик"/>-->
+            <!--                                    <div class="cup-info">-->
+            <!--                                        <p>Стакан гофрований</p>-->
+            <!--                                        <p>110мл/175мл/275мл/400мл</p>-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                                <div class="side back">-->
+            <!--                                    <div class="description">-->
+            <!--                                        <ul>-->
+            <!--                                            <li>Щільність 40-50 г/м²</li>-->
+            <!--                                            <li>З власним дизайном</li>-->
+            <!--                                            <li>Брендовані від 10000 шт.</li>-->
+            <!--                                            <li>100 шт/упаковка</li>-->
+            <!--                                        </ul>-->
+            <!--                                        <div class="contact-button">-->
+            <!--                                            <button>Зв'язатись</button>-->
+            <!--                                        </div>-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                        <div class="tile">-->
+            <!--                            <div class="card">-->
+            <!--                                <div class="side front">-->
+            <!--                                    <img src="assets/catalog-6.png" alt="Package 2">-->
+
+            <!--                                </div>-->
+            <!--                                <div class="side back">-->
+            <!--                                    <div class="description">-->
+            <!--                                        <ul>-->
+            <!--                                            <li>Щільність 40-50 г/м²</li>-->
+            <!--                                            <li>З власним дизайном</li>-->
+            <!--                                            <li>Брендовані від 10000 шт.</li>-->
+            <!--                                            <li>100 шт/упаковка</li>-->
+            <!--                                        </ul>-->
+            <!--                                        <div class="contact-button">-->
+            <!--                                            <button>Зв'язатись</button>-->
+            <!--                                        </div>-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                        <div class="tile">-->
+            <!--                            <div class="card">-->
+            <!--                                <div class="side front">-->
+            <!--                                    <img src="assets/catalog-7.png" alt="Package 3">-->
+            <!--                                </div>-->
+            <!--                                <div class="side back">-->
+            <!--                                    <div class="description">-->
+            <!--                                        <ul>-->
+            <!--                                            <li>Щільність 40-50 г/м²</li>-->
+            <!--                                            <li>З власним дизайном</li>-->
+            <!--                                            <li>Брендовані від 10000 шт.</li>-->
+            <!--                                            <li>100 шт/упаковка</li>-->
+            <!--                                        </ul>-->
+            <!--                                        <div class="contact-button">-->
+            <!--                                            <button>Зв'язатись</button>-->
+            <!--                                        </div>-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                        <div class="tile">-->
+            <!--                            <div class="card">-->
+            <!--                                <div class="side front">-->
+            <!--                                    <img src="assets/catalog-8.png" alt="Package 4">-->
+            <!--                                </div>-->
+            <!--                                <div class="side back">-->
+            <!--                                    <div class="description">-->
+            <!--                                        <ul>-->
+            <!--                                            <li>Щільність 40-50 г/м²</li>-->
+            <!--                                            <li>З власним дизайном</li>-->
+            <!--                                            <li>Брендовані від 10000 шт.</li>-->
+            <!--                                            <li>100 шт/упаковка</li>-->
+            <!--                                        </ul>-->
+            <!--                                        <div class="contact-button">-->
+            <!--                                            <button>Зв'язатись</button>-->
+            <!--                                        </div>-->
+            <!--                                    </div>-->
+            <!--                                </div>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+
         </div>
     </div>
 </main>
@@ -409,6 +468,8 @@
         </div>
     </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

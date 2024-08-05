@@ -47,7 +47,6 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
-    height: 830px;
 }
 
 .sidebar{
@@ -100,27 +99,58 @@ img{
     margin: 2px;
 }
 
-.background-container {
-    position: relative;
-    height: 500px;
-    background: url('../assets/bg-coffee.png') no-repeat center center;
-    background-size: cover;
-    margin-top: 70px;
-}
 
-.overlay-content {
-    position: absolute;
-    top: 0;
-    left: 0;
+
+swiper-container {
     width: 100%;
     height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    color: white; /* Adjust color as needed */
-    padding: 20px;
+    font-weight: bold;
 }
+
+.autoplay-progress svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    fill: none;
+    transform: rotate(-90deg);
+}
+
+
+
+
+
 
 .section{
     width: 500px;
@@ -131,28 +161,56 @@ img{
     flex-direction: column;
 }
 
-.two-section{
+.two-section {
     display: flex;
 }
-
+.question-block {
+    text-align: center;
+}
+.title h3 {
+    margin-bottom: 30px;
+}
 .buttons-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 50px;
     flex-wrap: wrap;
+}
+.one-line, .second-line {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .button-item {
     background-color: white;
-    border-radius: 25px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
     padding: 10px 20px;
+    width: 500px;
     margin: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, height 0.3s;
+    overflow: hidden;
+    position: relative;
 }
-
+.button-item:hover {
+    background-color: #f0f0f0;
+}
+.button-title {
+    display: block;
+}
+.button-content {
+    display: none;
+    text-align: left;
+    padding: 10px;
+}
+.expanded .button-title {
+    display: none;
+}
+.expanded .button-content {
+    display: block;
+}
 .modal {
     display: none;
     position: fixed;
@@ -270,7 +328,7 @@ img{
     transform: scale3d(0.9,0.9,1);
     transition: transform 0.5s cubic-bezier(.25,.75,.25,1.25);
     position: relative;
-    box-shadow: 0px 30px 50px -30px rgba(0,0,0,0.35);
+    box-shadow: 0 30px 50px -30px rgba(0,0,0,0.35);
     border-radius: 5px;
 }
 
@@ -344,4 +402,35 @@ img{
 
 .cup-info {
     margin-top: 16px;
+}
+
+
+
+
+.color-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.color-btn {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+}
+
+.cup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Fixed height for the cup container */
+    margin-bottom: 10px;
+}
+
+.cup img {
+    width: 100px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensures the image fits within the specified dimensions */
 }
