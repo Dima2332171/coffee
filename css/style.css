@@ -52,8 +52,6 @@ header {
 .sidebar{
     width: 22%;
     margin-right: 50px;
-    height: 830px;
-
 }
 
 .image-block{
@@ -78,7 +76,7 @@ img{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 220px;
+    height: 252px;
     border-radius: 5px;
     border: 1px solid white;
     background-color: #A8B9C0;
@@ -88,17 +86,9 @@ img{
     transform: scale(1.3);
 }
 
-.block{
-    display: flex;
+.second-part{
+    margin-top: 50px;
 }
-
-.image-row{
-    display: flex;
-}
-.image-block img{
-    margin: 2px;
-}
-
 
 
 swiper-container {
@@ -127,7 +117,7 @@ swiper-slide img {
     right: 16px;
     bottom: 16px;
     z-index: 10;
-    width: 48px;
+    /*width: 48px;*/
     height: 48px;
     display: flex;
     align-items: center;
@@ -152,9 +142,6 @@ swiper-slide img {
 
 
 
-.section{
-    width: 500px;
-}
 
 .main-section{
     display: flex;
@@ -166,20 +153,34 @@ swiper-slide img {
 }
 .question-block {
     text-align: center;
+    margin-top: 50px;
 }
 .title h3 {
     margin-bottom: 30px;
 }
 .buttons-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 .one-line, .second-line {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
+}
+
+.second-line{
+    width: 50%;
+}
+
+.pay{
+    width: 45%;
+}
+
+.brand{
+    width: 45%;
 }
 
 .button-item {
@@ -187,7 +188,7 @@ swiper-slide img {
     border: 1px solid #ccc;
     border-radius: 15px;
     padding: 10px 20px;
-    width: 500px;
+    width: 100%;
     margin: 10px;
     cursor: pointer;
     transition: background-color 0.3s, height 0.3s;
@@ -280,6 +281,9 @@ swiper-slide img {
     text-decoration: none;
     cursor: pointer;
 }
+.clients-block{
+    margin-top: 50px;
+}
 
 .clients-section {
     text-align: center;
@@ -306,6 +310,9 @@ swiper-slide img {
     border: 3px solid #000;
 }
 
+.catalog-block{
+    margin-top: 50px;
+}
 
 .tiles {
     display: flex;
@@ -315,7 +322,7 @@ swiper-slide img {
 
 .tile {
     margin: 10px;
-    width: 250px;
+    width: 22%;
     height: 310px;
     perspective: 1000px;
 
@@ -396,7 +403,7 @@ swiper-slide img {
 }
 
 .cup-image {
-    width: 150px;
+    /*width: 150px;*/
     height: auto;
 }
 
