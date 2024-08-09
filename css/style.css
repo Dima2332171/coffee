@@ -206,6 +206,30 @@ swiper-slide img {
     text-align: left;
     padding: 10px;
 }
+
+li{
+    list-style-type: none;
+}
+.li-block{
+    display: flex;
+}
+
+.question-text p{
+    margin: 0;
+}
+
+.highlight{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.question-text{
+    margin-bottom: 20px;
+}
+
+.note{
+    margin: 0;
+}
 .expanded .button-title {
     display: none;
 }
@@ -352,6 +376,7 @@ swiper-slide img {
     justify-content: center;
     align-items: center;
     border-radius: inherit;
+    flex-direction: column;
 }
 
 .front {
@@ -365,8 +390,21 @@ swiper-slide img {
 .contact-button{
     text-align: center;
 }
+.custom-button {
+    background-color: #A9B9C0; /* Цвет фона */
+    color: #000; /* Цвет текста */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px; /* Закругленные углы */
+    cursor: pointer;
+    text-align: center;
+}
 
-.contact-button a{
+.custom-button:hover {
+    background-color: #8FA0A7; /* Цвет при наведении */
+}
+
+a{
     text-decoration: none;
     color: black;
 }
@@ -629,3 +667,77 @@ swiper-slide img {
     opacity: 0;
 }
 
+footer{
+    background-color: #A8B9C0;
+    width: 100%;
+    height: 310px;
+    padding-top: 50px;
+}
+.photo-cert{
+    display: flex;
+    width: 100%;
+}
+.text-footer{
+    width: 40%;
+}
+.footer-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.myModal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1;
+    padding-top: 0; /* Убираем отступ сверху */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Отключаем прокрутку */
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Стили для изображения внутри модального окна */
+.myModal-content {
+    margin: auto;
+    display: block;
+    height: 100vh; /* Высота изображения равна высоте экрана */
+    max-height: 100vh; /* Максимальная высота изображения — 100% высоты экрана */
+    width: auto; /* Автоматическая ширина для сохранения пропорций */
+    max-width: 100%; /* Максимальная ширина — 100%, чтобы не выходило за рамки экрана */
+}
+
+/* Закрывающий крестик */
+.myClose {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.myClose:hover,
+.myClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Для анимации модального окна (увеличение изображения) */
+.myModal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}

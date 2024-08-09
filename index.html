@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -74,7 +74,8 @@
         </div>
 
         <div class="second-part">
-            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="false" space-between="30"
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="false"
+                              space-between="30"
                               centered-slides="true" autoplay-delay="8000" autoplay-disable-on-interaction="false">
                 <swiper-slide><img src="assets/Columbia.png" alt="Columbia"></swiper-slide>
                 <swiper-slide><img src="assets/burundi_kayanza.png" alt="burundi"></swiper-slide>
@@ -98,16 +99,36 @@
                         <div class="button-item" onclick="expandButton(this)">
                             <span class="button-title">Оплата і доставка</span>
                             <div class="button-content">
-                                <p>Самовіз Пн-Пт БЕЗКОШТОВНИЙ</p>
-                                <p>Доставка по м.Черкаси БЕЗКОШТОВНА</p>
-                                <p>Доставка в інші регіони здійснюється ЗА РАХУНОК КЛІЄНТА</p>
-                                <p>Доставка здійснюється за умови повної або часткової передплати</p>
-                                <p>*При отриманні посилки обов'язково перевіряйте її зміст у присутності компанії
+                                <ul>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Самовіз Пн-Пт БЕЗКОШТОВНИЙ</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Доставка по м.Черкаси БЕЗКОШТОВНА</p></div>
+                                    </li>
+                                    <li><p><img src="assets/np.png" alt="NP">Доставка в інші регіони здійснюється ЗА
+                                        РАХУНОК КЛІЄНТА</p></li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Доставка здійснюється за умови повної або часткової передплати</p></div>
+                                    </li>
+                                </ul>
+                                <span class="question-text">
+                                    <p>*При отриманні посилки обов'язково перевіряйте її зміст у присутності компанії
                                     перевізника.</p>
                                 <p>Замовлення автоматично повертається відправнику через 5 робочих днів (якщо замовник
                                     не забрав посилку).</p>
                                 <p>Номер накладної для відстеження переміщення посилки буде відправлено в
                                     смс-повідомленні після відправки замовлення.</p>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -115,26 +136,64 @@
                         <div class="button-item" onclick="expandButton(this)">
                             <span class="button-title">Брендована продукція</span>
                             <div class="button-content">
-                                <div class="item">
-                                    <div class="text">Паперові двошарові станканчики 175/250/400мл<br><span
-                                            class="highlight">від 6 тис. шт.</span></div>
-                                </div>
-                                <div class="item">
-                                    <div class="text">Паперові пакети індивідуального пакування<br><span
-                                            class="highlight">від 10 тис. шт.</span></div>
-                                </div>
-                                <div class="item">
-                                    <div class="text">Цукор в стіках по 5 грам<br><span class="highlight">від 40 тис. шт.</span>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="text">Дерев’яні мішалки в індивідуальних упаковках<br><span
-                                            class="highlight">від 40 тис. шт.</span></div>
-                                </div>
-                                <div class="item">
-                                    <div class="text">Трубочки гофровані або фреш в індивідуальний уп.<br><span
-                                            class="highlight">від 4 тис. шт.</span></div>
-                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <div class="li-block">
+                                                <div><img src="assets/free-icon-check-mark-5290119.png"
+                                                          style="width: 25px"
+                                                          alt="icon-check"></div>
+                                                <div class="text">Паперові двошарові станканчики 175/250/400мл<br><span
+                                                        class="highlight">від 6 тис. шт.</span></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <div class="li-block">
+                                                <div><img src="assets/free-icon-check-mark-5290119.png"
+                                                          style="width: 25px"
+                                                          alt="icon-check"></div>
+                                                <div class="text">Паперові пакети індивідуального пакування<br><span
+                                                        class="highlight">від 10 тис. шт.</span></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <div class="li-block">
+                                                <div><img src="assets/free-icon-check-mark-5290119.png"
+                                                          style="width: 25px"
+                                                          alt="icon-check"></div>
+                                                <div class="text">Цукор в стіках по 5 грам<br><span class="highlight">від 40 тис. шт.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <div class="li-block">
+                                                <div><img src="assets/free-icon-check-mark-5290119.png"
+                                                          style="width: 25px"
+                                                          alt="icon-check"></div>
+                                                <div class="text">Дерев’яні мішалки в індивідуальних упаковках<br><span
+                                                        class="highlight">від 40 тис. шт.</span></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <div class="li-block">
+                                                <div><img src="assets/free-icon-check-mark-5290119.png"
+                                                          style="width: 25px"
+                                                          alt="icon-check"></div>
+                                                <div class="text">Трубочки гофровані або фреш в індивідуальний
+                                                    уп.<br><span
+                                                            class="highlight">від 4 тис. шт.</span></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -143,11 +202,21 @@
                     <div class="button-item" onclick="expandButton(this)">
                         <span class="button-title">Терміни Виготовлення</span>
                         <div class="button-content">
-                            <p>Виготовлення брендованої продукції займає до 2-х тижнів після узгодження дизайну</p>
-                            <p class="note">*Ви можете скористатись послугами нашого дизайнера або надати готовий
-                                дизайн-проект</p>
-                            <p>Відправка НЕ брендованої продукції здійснюється на наступний день після оплати
-                                замовлення( за умови наявності товару)</p></div>
+                            <div class="li-block">
+                                <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                          alt="icon-check"></div>
+                                <p>Виготовлення брендованої продукції займає до 2-х тижнів після узгодження дизайну</p>
+                            </div>
+                            <div class="question-text">
+                                <p class="note">*Ви можете скористатись послугами нашого дизайнера або надати готовий
+                                    дизайн-проект</p>
+                            </div>
+                            <div class="li-block">
+                                <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                          alt="icon-check"></div>
+                                <p>Відправка НЕ брендованої продукції здійснюється на наступний день після оплати
+                                    замовлення( за умови наявності товару)</p></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,13 +227,20 @@
                 <h2>НАШІ КЛІЄНТИ</h2>
             </div>
             <div class="clients-logos">
-                <div class="logo-client"><a href="https://www.instagram.com/peron_azs_ukraine?igsh=MWQxeWFwY2FnNjRqZA==" target="_blank"><img src="assets/client-1.png" alt="ПЕРОН"></a></div>
-                <div class="logo-client"><a href="https://www.instagram.com/klara_zaharivna?igsh=MTN5ODBocW56eTU3eA==" target="_blank"><img src="assets/client-2.png" alt="Клара"></a></div>
-                <div class="logo-client"><a href="https://www.instagram.com/fabryka_kavy_ck?igsh=cXA5Z2ZtNTRwODFy" target="_blank"><img src="assets/client-3.png" alt="ФАБРИКА КАВИ"></a></div>
-                <div class="logo-client"><a href="https://www.instagram.com/bulochna_ua?igsh=MTh0YmJqa3NheXd4bQ==" target="_blank"><img src="assets/client-4.png" alt="bulochna"></a></div>
-                <div class="logo-client"><a href="https://www.instagram.com/bakery_ck?igsh=dzV1Z3pmYXZhdjh2" target="_blank"><img src="assets/client-5.png" alt="Bakery"></a></div>
-                <div class="logo-client"><a href="https://www.instagram.com/shotut_che?igsh=c25ndnozbGg5Z3Q4" target="_blank"><img src="assets/client-6.png" alt="ШО ТУТ?"></a></div>
-                <div class="logo-client"><a href="https://www.instagram.com/caffeine.ck?igsh=aTl2cGNoNTZ0Z2c2" target="_blank"><img src="assets/client-7.png" alt="Caffeine"></a></div>
+                <div class="logo-client"><a href="https://www.instagram.com/peron_azs_ukraine?igsh=MWQxeWFwY2FnNjRqZA=="
+                                            target="_blank"><img src="assets/client-1.png" alt="ПЕРОН"></a></div>
+                <div class="logo-client"><a href="https://www.instagram.com/klara_zaharivna?igsh=MTN5ODBocW56eTU3eA=="
+                                            target="_blank"><img src="assets/client-2.png" alt="Клара"></a></div>
+                <div class="logo-client"><a href="https://www.instagram.com/fabryka_kavy_ck?igsh=cXA5Z2ZtNTRwODFy"
+                                            target="_blank"><img src="assets/client-3.png" alt="ФАБРИКА КАВИ"></a></div>
+                <div class="logo-client"><a href="https://www.instagram.com/bulochna_ua?igsh=MTh0YmJqa3NheXd4bQ=="
+                                            target="_blank"><img src="assets/client-4.png" alt="bulochna"></a></div>
+                <div class="logo-client"><a href="https://www.instagram.com/bakery_ck?igsh=dzV1Z3pmYXZhdjh2"
+                                            target="_blank"><img src="assets/client-5.png" alt="Bakery"></a></div>
+                <div class="logo-client"><a href="https://www.instagram.com/shotut_che?igsh=c25ndnozbGg5Z3Q4"
+                                            target="_blank"><img src="assets/client-6.png" alt="ШО ТУТ?"></a></div>
+                <div class="logo-client"><a href="https://www.instagram.com/caffeine.ck?igsh=aTl2cGNoNTZ0Z2c2"
+                                            target="_blank"><img src="assets/client-7.png" alt="Caffeine"></a></div>
             </div>
         </div>
 
@@ -178,17 +254,39 @@
                     <div class="card">
                         <div class="side front">
                             <img src="assets/catalog-1.png" alt="Package 1">
+                            <p style="text-align: center">Пакет паперовий крафт 170х310х60мм</p>
                         </div>
                         <div class="side back">
                             <div class="description">
                                 <ul>
-                                    <li>Щільність 40-50 г/м²</li>
-                                    <li>З власним дизайном</li>
-                                    <li>Брендовані від 10000 шт.</li>
-                                    <li>100 шт/упаковка</li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Щільність 40-50 г/м²</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>З власним дизайном</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Брендовані від 10000 шт.</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>100 шт/упаковка</p></div>
+                                    </li>
                                 </ul>
                                 <div class="contact-button">
-                                    <button><a href="https://t.me/curly_genie">Зв'язатись</a></button>
+                                    <button class="custom-button"><a href="https://t.me/curly_genie" target="_blank">Зв'язатись</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -198,18 +296,39 @@
                     <div class="card">
                         <div class="side front">
                             <img src="assets/catalog-2.png" alt="Package 2">
-
+                            <p style="text-align: center">Пакет паперовий крафт 170х210х70мм</p>
                         </div>
                         <div class="side back">
                             <div class="description">
                                 <ul>
-                                    <li>Щільність 40-50 г/м²</li>
-                                    <li>З власним дизайном</li>
-                                    <li>Брендовані від 10000 шт.</li>
-                                    <li>100 шт/упаковка</li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Щільність 40-50 г/м²</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>З власним дизайном</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Брендовані від 10000 шт.</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>100 шт/упаковка</p></div>
+                                    </li>
                                 </ul>
                                 <div class="contact-button">
-                                    <button><a href="https://t.me/curly_genie">Зв'язатись</a></button>
+                                    <button class="custom-button"><a href="https://t.me/curly_genie" target="_blank">Зв'язатись</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -219,17 +338,39 @@
                     <div class="card">
                         <div class="side front">
                             <img src="assets/catalog-3.png" alt="Package 3">
+                            <p style="text-align: center">Пакет паперовий крафт 210х210х40мм</p>
                         </div>
                         <div class="side back">
                             <div class="description">
                                 <ul>
-                                    <li>Щільність 40-50 г/м²</li>
-                                    <li>З власним дизайном</li>
-                                    <li>Брендовані від 10000 шт.</li>
-                                    <li>100 шт/упаковка</li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Щільність 40-50 г/м²</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>З власним дизайном</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Брендовані від 10000 шт.</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>100 шт/упаковка</p></div>
+                                    </li>
                                 </ul>
                                 <div class="contact-button">
-                                    <button><a href="https://t.me/curly_genie">Зв'язатись</a></button>
+                                    <button class="custom-button"><a href="https://t.me/curly_genie" target="_blank">Зв'язатись</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -239,17 +380,39 @@
                     <div class="card">
                         <div class="side front">
                             <img src="assets/catalog-4.png" alt="Package 4">
+                            <p style="text-align: center">Пакет паперовий крафт 100х430х60мм</p>
                         </div>
                         <div class="side back">
                             <div class="description">
                                 <ul>
-                                    <li>Щільність 40-50 г/м²</li>
-                                    <li>З власним дизайном</li>
-                                    <li>Брендовані від 10000 шт.</li>
-                                    <li>100 шт/упаковка</li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Щільність 40-50 г/м²</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>З власним дизайном</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Брендовані від 10000 шт.</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>100 шт/упаковка</p></div>
+                                    </li>
                                 </ul>
                                 <div class="contact-button">
-                                    <button><a href="https://t.me/curly_genie">Зв'язатись</a></button>
+                                    <button class="custom-button"><a href="https://t.me/curly_genie" target="_blank">Зв'язатись</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -262,17 +425,39 @@
                     <div class="card">
                         <div class="side front">
                             <img src="assets/catalog-5.png" alt="Package 1">
+                            <p style="text-align: center">Пакет паперовий крафт 100х310х60мм</p>
                         </div>
                         <div class="side back">
                             <div class="description">
                                 <ul>
-                                    <li>Щільність 40-50 г/м²</li>
-                                    <li>З власним дизайном</li>
-                                    <li>Брендовані від 10000 шт.</li>
-                                    <li>100 шт/упаковка</li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Щільність 40-50 г/м²</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>З власним дизайном</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Брендовані від 10000 шт.</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>100 шт/упаковка</p></div>
+                                    </li>
                                 </ul>
                                 <div class="contact-button">
-                                    <button><a href="https://t.me/curly_genie">Зв'язатись</a></button>
+                                    <button class="custom-button"><a href="https://t.me/curly_genie" target="_blank">Зв'язатись</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -282,18 +467,39 @@
                     <div class="card">
                         <div class="side front">
                             <img src="assets/catalog-6.png" alt="Package 2">
-
+                            <p style="text-align: center">Пакет паперовий крафт 210х310х50мм</p>
                         </div>
                         <div class="side back">
                             <div class="description">
                                 <ul>
-                                    <li>Щільність 40-50 г/м²</li>
-                                    <li>З власним дизайном</li>
-                                    <li>Брендовані від 10000 шт.</li>
-                                    <li>100 шт/упаковка</li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Щільність 40-50 г/м²</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>З власним дизайном</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Брендовані від 10000 шт.</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>100 шт/упаковка</p></div>
+                                    </li>
                                 </ul>
                                 <div class="contact-button">
-                                    <button><a href="https://t.me/curly_genie">Зв'язатись</a></button>
+                                    <button class="custom-button"><a href="https://t.me/curly_genie" target="_blank">Зв'язатись</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -303,17 +509,39 @@
                     <div class="card">
                         <div class="side front">
                             <img src="assets/catalog-7.png" alt="Package 3">
+                            <p style="text-align: center">Пакет паперовий крафт 250х430х80мм</p>
                         </div>
                         <div class="side back">
                             <div class="description">
                                 <ul>
-                                    <li>Щільність 40-50 г/м²</li>
-                                    <li>З власним дизайном</li>
-                                    <li>Брендовані від 10000 шт.</li>
-                                    <li>100 шт/упаковка</li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Щільність 40-50 г/м²</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>З власним дизайном</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Брендовані від 10000 шт.</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>100 шт/упаковка</p></div>
+                                    </li>
                                 </ul>
                                 <div class="contact-button">
-                                    <button><a href="https://t.me/curly_genie">Зв'язатись</a></button>
+                                    <button class="custom-button"><a href="https://t.me/curly_genie" target="_blank">Зв'язатись</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -323,17 +551,39 @@
                     <div class="card">
                         <div class="side front">
                             <img src="assets/catalog-8.png" alt="Package 4">
+                            <p style="text-align: center">Пакет паперовий крафт 100х210х60мм</p>
                         </div>
                         <div class="side back">
                             <div class="description">
                                 <ul>
-                                    <li>Щільність 40-50 г/м²</li>
-                                    <li>З власним дизайном</li>
-                                    <li>Брендовані від 10000 шт.</li>
-                                    <li>100 шт/упаковка</li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Щільність 40-50 г/м²</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>З власним дизайном</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Брендовані від 10000 шт.</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>100 шт/упаковка</p></div>
+                                    </li>
                                 </ul>
                                 <div class="contact-button">
-                                    <button><a href="https://t.me/curly_genie">Зв'язатись</a></button>
+                                    <button class="custom-button"><a href="https://t.me/curly_genie" target="_blank">Зв'язатись</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -348,13 +598,20 @@
                     <div class="card_new-cup">
                         <div class="side_new-cup front_new-cup">
                             <div class="colors_new-cup">
-                                <button class="color-btn_new-cup" data-color="purple" style="background-color: #b400b0;"></button>
-                                <button class="color-btn_new-cup" data-color="yellow" style="background-color: #d7df01;"></button>
-                                <button class="color-btn_new-cup" data-color="green" style="background-color: #a3a800;"></button>
-                                <button class="color-btn_new-cup" data-color="brown" style="background-color: #3a3027;"></button>
-                                <button class="color-btn_new-cup" data-color="black" style="background-color: #2e2e2e;"></button>
-                                <button class="color-btn_new-cup" data-color="blue" style="background-color: #00a8a8;"></button>
-                                <button class="color-btn_new-cup" data-color="red" style="background-color: #e00000;"></button>
+                                <button class="color-btn_new-cup" data-color="purple"
+                                        style="background-color: #b400b0;"></button>
+                                <button class="color-btn_new-cup" data-color="yellow"
+                                        style="background-color: #d7df01;"></button>
+                                <button class="color-btn_new-cup" data-color="green"
+                                        style="background-color: #a3a800;"></button>
+                                <button class="color-btn_new-cup" data-color="brown"
+                                        style="background-color: #3a3027;"></button>
+                                <button class="color-btn_new-cup" data-color="black"
+                                        style="background-color: #2e2e2e;"></button>
+                                <button class="color-btn_new-cup" data-color="blue"
+                                        style="background-color: #00a8a8;"></button>
+                                <button class="color-btn_new-cup" data-color="red"
+                                        style="background-color: #e00000;"></button>
                             </div>
                             <div class="flex-block_new-cup">
                                 <div>
@@ -368,13 +625,36 @@
                         <div class="side_new-cup back_new-cup">
                             <div class="description_new-cup">
                                 <ul>
-                                    <li>Щільність 40-50 г/м²</li>
-                                    <li>З власним дизайном</li>
-                                    <li>Брендовані від 10000 шт.</li>
-                                    <li>100 шт/упаковка</li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <div>
+                                                <p>Щільність:</p>
+                                                <p>110мл -210+200 г/м2 <br>
+                                                    175мл -215+200 г/м2 <br>
+                                                    275мл -250+200 г/м2 <br>
+                                                    400мл -275+200 г/м2</p>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>25шт/упаковка</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Без дизайну</p></div>
+                                    </li>
                                 </ul>
-                                <div class="contact-button_new-cup">
-                                    <button><a href="https://t.me/curly_genie">Зв'язатись</a></button>
+                                <div class="contact-button">
+                                    <button class="custom-button"><a href="https://t.me/curly_genie" target="_blank">Зв'язатись</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -393,20 +673,43 @@
                                     <img id='cup' src="assets/coffee_factory.png" alt="Cup">
                                 </div>
                                 <div>
-                                    <p>Стакан гофрований<br>110мл/175мл/275мл/400мл</p>
+                                    <p style="text-align: center">Стакан двошаровий<br>175мл/250мл/400мл</p>
                                 </div>
                             </div>
                         </div>
                         <div class="side_slider-cup back_slider-cup">
                             <div class="description_slider-cup">
                                 <ul>
-                                    <li>Щільність 40-50 г/м²</li>
-                                    <li>З власним дизайном</li>
-                                    <li>Брендовані від 10000 шт.</li>
-                                    <li>100 шт/упаковка</li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <div>
+                                                <p>Щільність:</p>
+                                                <p>110мл -210+200 г/м2 <br>
+                                                    175мл -215+200 г/м2 <br>
+                                                    275мл -250+200 г/м2 <br>
+                                                    400мл -275+200 г/м2</p>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>25шт/упаковка</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Без дизайну</p></div>
+                                    </li>
                                 </ul>
-                                <div class="contact-button_slider-cup">
-                                    <button><a href="https://t.me/curly_genie">Зв'язатись</a></button>
+                                <div class="contact-button">
+                                    <button class="custom-button"><a href="https://t.me/curly_genie" target="_blank">Зв'язатись</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -421,20 +724,35 @@
                                     <img src="assets/plastic_cocktail_glass.png" alt="Cup" class="cup-image_new-cup">
                                 </div>
                                 <div>
-                                    <p>Стакан гофрований<br>110мл/175мл/275мл/400мл</p>
+                                    <p style="text-align: center">Стакан купольний з кришкою<br>250мл/320мл/420мл</p>
                                 </div>
                             </div>
                         </div>
                         <div class="side back">
                             <div class="description">
                                 <ul>
-                                    <li>Щільність 40-50 г/м²</li>
-                                    <li>З власним дизайном</li>
-                                    <li>Брендовані від 10000 шт.</li>
-                                    <li>100 шт/упаковка</li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Для холодних напоїв</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>50 або 100 шт/упаковка</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Без дизайну</p></div>
+                                    </li>
                                 </ul>
                                 <div class="contact-button">
-                                    <button><a href="https://t.me/curly_genie">Зв'язатись</a></button>
+                                    <button class="custom-button"><a href="https://t.me/curly_genie" target="_blank">Зв'язатись</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -485,7 +803,7 @@
                                     <img id="lid" src="assets/lid_black.png" alt="Cup">
                                 </div>
                                 <div>
-                                    <p>Стакан гофрований<br>110мл/175мл/275мл/400мл</p>
+                                    <p style="text-align: center">Кришки для стаканів<br>71/75/76/80/90мм</p>
                                 </div>
                             </div>
                         </div>
@@ -513,20 +831,41 @@
                                     <img src="assets/straw.png" alt="Cup" class="cup-image_new-cup">
                                 </div>
                                 <div>
-                                    <p>Стакан гофрований<br>110мл/175мл/275мл/400мл</p>
+                                    <p style="text-align: center">Трубочки для напоїв<br>гофровані / фреш</p>
                                 </div>
                             </div>
                         </div>
                         <div class="side back">
                             <div class="description">
                                 <ul>
-                                    <li>Щільність 40-50 г/м²</li>
-                                    <li>З власним дизайном</li>
-                                    <li>Брендовані від 10000 шт.</li>
-                                    <li>100 шт/упаковка</li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>В індивід. упаковці</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Без індивід. упаковки</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>від 200 шт/упаковка</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Різнокольорові</p></div>
+                                    </li>
                                 </ul>
                                 <div class="contact-button">
-                                    <button><a href="https://t.me/curly_genie">Зв'язатись</a></button>
+                                    <button class="custom-button"><a href="https://t.me/curly_genie" target="_blank">Зв'язатись</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -545,7 +884,7 @@
                                     <img id="holder" src="assets/holder1.png" alt="Cup">
                                 </div>
                                 <div>
-                                    <p>Стакан гофрований<br>110мл/175мл/275мл/400мл</p>
+                                    <p style="text-align: center">Холдер для стаканів<br>для 2/для 4</p>
                                 </div>
                             </div>
                         </div>
@@ -577,7 +916,7 @@
                                     <img id='tissue' src="assets/tissue1.png" alt="tissue">
                                 </div>
                                 <div>
-                                    <p>Стакан гофрований<br>110мл/175мл/275мл/400мл</p>
+                                    <p style="text-align: center">Серветка барна біла<br>100 шт/500 шт</p>
                                 </div>
                             </div>
                         </div>
@@ -608,20 +947,47 @@
                                     <img src="assets/wand.png" alt="Cup" class="cup-image_new-cup">
                                 </div>
                                 <div>
-                                    <p>Стакан гофрований<br>110мл/175мл/275мл/400мл</p>
+                                    <p style="text-align: center">Мішалка дерев’яна</p>
                                 </div>
                             </div>
                         </div>
                         <div class="side back">
                             <div class="description">
                                 <ul>
-                                    <li>Щільність 40-50 г/м²</li>
-                                    <li>З власним дизайном</li>
-                                    <li>Брендовані від 10000 шт.</li>
-                                    <li>100 шт/упаковка</li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>В індивід. упаковці</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Без індивід. упаковки</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>З власним дизайном</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Від 40 тис.шт. з дизайном</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Від 500 шт. без дизайну</p></div>
+                                    </li>
                                 </ul>
                                 <div class="contact-button">
-                                    <button><a href="https://t.me/curly_genie">Зв'язатись</a></button>
+                                    <button class="custom-button"><a href="https://t.me/curly_genie" target="_blank">Зв'язатись</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -636,20 +1002,41 @@
                                     <img src="assets/sugare.png" alt="Cup" class="cup-image_new-cup">
                                 </div>
                                 <div>
-                                    <p>Стакан гофрований<br>110мл/175мл/275мл/400мл</p>
+                                    <p style="text-align: center">Цукор в стіках 5г</p>
                                 </div>
                             </div>
                         </div>
                         <div class="side back">
                             <div class="description">
                                 <ul>
-                                    <li>Щільність 40-50 г/м²</li>
-                                    <li>З власним дизайном</li>
-                                    <li>Брендовані від 10000 шт.</li>
-                                    <li>100 шт/упаковка</li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>В індивід. упаковці</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>З власним дизайном</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Від 200кг(40 тис.шт.) з дизайном</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="li-block">
+                                            <div><img src="assets/free-icon-check-mark-5290119.png" style="width: 25px"
+                                                      alt="icon-check"></div>
+                                            <p>Від 10кг(2 тис.шт.) без дизайну</p></div>
+                                    </li>
                                 </ul>
                                 <div class="contact-button">
-                                    <button><a href="https://t.me/curly_genie">Зв'язатись</a></button>
+                                    <button class="custom-button"><a href="https://t.me/curly_genie" target="_blank">Зв'язатись</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -727,7 +1114,30 @@
 </main>
 
 <footer>
+    <div class="custom-container">
+        <div class="footer-block">
+            <div class="certificates">
+                <p>Висновки державної санітарно-епідеміологічної експертизи:</p>
+                <div class="photo-cert">
+                    <div class="item-footer"><img src="assets/cert1.png" alt="cert1" onclick="openModal(this)"></div>
+                    <div class="item-footer"><img src="assets/cert2.png" alt="cert2" onclick="openModal(this)"></div>
+                    <div class="item-footer"><img src="assets/cert3.png" alt="cert3" onclick="openModal(this)"></div>
+                    <div class="item-footer"><img src="assets/cert4.png" alt="cert4" onclick="openModal(this)"></div>
+                </div>
 
+
+                <div id="myModal" class="myModal">
+                    <span class="myClose" onclick="myCloseModal()">&times;</span>
+                    <img class="myModal-content" id="img01" alt="img">
+                </div>
+            </div>
+            <div class="text-footer">
+                <p>**Фото на сайті ознайомлюючі і мають ілюстраційний характер. Зображення можуть мати відмінність від
+                    фактичного зовнішнього вигляду товару по кольору, відтінку та дизайну, та узгоджуються з кожним
+                    клієнтом окремо.</p>
+            </div>
+        </div>
+    </div>
 </footer>
 
 

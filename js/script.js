@@ -198,3 +198,25 @@ function prevImage(type) {
     }
 }
 
+function openModal(imageElement) {
+    // Получаем имя изображения без расширения
+    const imageName = imageElement.alt;
+
+    // Формируем путь к новому изображению с добавлением _modal
+    const modalImagePath = `assets/${imageName}_modal.png`;
+
+    // Находим модальное окно и изображение внутри него
+    const modal = document.getElementById("myModal");
+    const modalImage = document.getElementById("img01");
+
+    // Устанавливаем новое изображение в модальное окно
+    modalImage.src = modalImagePath;
+
+    // Показываем модальное окно
+    modal.style.display = "block";
+}
+
+function myCloseModal() {
+    const modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
