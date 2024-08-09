@@ -68,6 +68,20 @@ swiperEl.addEventListener("autoplaytimeleft", (e) => {
 
 
 // First card logic
+// const allSimpleImages = document.querySelectorAll('.flex-block_new-cup img');
+// allSimpleImages.forEach(img => {
+//     img.addEventListener('click', function () {
+//         const card = img.closest('.card');
+//         if (card) card.classList.add('rotate');
+//     });
+//
+//     img.addEventListener('mouseout', function () {
+//         const card = img.closest('.card');
+//         if (card) card.classList.remove('rotate');
+//     });
+// });
+
+
 const newCupImages = document.querySelectorAll('.card_new-cup img');
 newCupImages.forEach(img => {
     img.addEventListener('click', function () {
@@ -75,7 +89,7 @@ newCupImages.forEach(img => {
         if (card) card.classList.add('rotate_new-cup');
     });
 
-    img.addEventListener('mouseout', function () {
+        img.addEventListener('mouseout', function () {
         const card = img.closest('.card_new-cup');
         if (card) card.classList.remove('rotate_new-cup');
     });

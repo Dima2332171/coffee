@@ -518,7 +518,10 @@ a{
     height: 100%;
     backface-visibility: hidden;
     border-radius: inherit;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .front_slider-cup {
@@ -539,7 +542,7 @@ a{
 .slider_slider-cup {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    width: 90%;
 }
 
 .slider-btn_slider-cup {
