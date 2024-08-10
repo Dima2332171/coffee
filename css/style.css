@@ -82,6 +82,7 @@ img{
     background-color: #A8B9C0;
 }
 
+
 .sidebar-image img:hover{
     transform: scale(1.3);
 }
@@ -747,3 +748,15 @@ footer{
     }
 }
 
+@media (max-width: 960px) {
+    .sidebar{
+        display: none;
+    }
+    .main-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+}
