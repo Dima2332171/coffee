@@ -189,7 +189,7 @@ swiper-slide img {
     border-radius: 15px;
     padding: 10px 20px;
     width: 100%;
-    margin: 10px;
+    margin-bottom: 10px;
     cursor: pointer;
     transition: background-color 0.3s, height 0.3s;
     overflow: hidden;
@@ -202,6 +202,7 @@ swiper-slide img {
     display: block;
 }
 .button-content {
+    font-family: "Inter", sans-serif;
     display: none;
     text-align: left;
     padding: 10px;
@@ -246,6 +247,7 @@ li{
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
+    font-family: "Inter", sans-serif;
 }
 
 .modal-content {
@@ -744,3 +746,4 @@ footer{
         transform: scale(1);
     }
 }
+

@@ -106,18 +106,19 @@ newCupColorButtons.forEach(button => {
 });
 
 // Second card logic
-const sliderCupImages = document.querySelectorAll('.card_slider-cup img');
-sliderCupImages.forEach(img => {
-    img.addEventListener('click', function () {
-        const card = img.closest('.card_slider-cup');
+const cardCupText = document.querySelector('.flex-block_slider-cup p');
+
+if (cardCupText) {
+    cardCupText.addEventListener('mouseover', function () {
+        const card = cardCupText.closest('.card_slider-cup');
         if (card) card.classList.add('rotate_slider-cup');
     });
 
-    img.addEventListener('mouseout', function () {
-        const card = img.closest('.card_slider-cup');
+    cardCupText.addEventListener('mouseout', function () {
+        const card = cardCupText.closest('.card_slider-cup');
         if (card) card.classList.remove('rotate_slider-cup');
     });
-});
+}
 
 const sliderCupButtons = document.querySelectorAll(".slider-btn_slider-cup");
 const sliderCupImage = document.getElementById("cup-image_slider-cup");
@@ -234,3 +235,4 @@ function myCloseModal() {
     const modal = document.getElementById("myModal");
     modal.style.display = "none";
 }
+
