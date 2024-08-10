@@ -261,9 +261,10 @@ li{
 
 .close {
     color: #aaa;
-    float: right;
     font-size: 28px;
     font-weight: bold;
+    display: flex;
+     justify-content: end;
 }
 
 .close:hover,
