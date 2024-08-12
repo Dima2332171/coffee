@@ -13,6 +13,7 @@
           rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>KraftPack | UA</title>
 </head>
@@ -25,7 +26,21 @@
             </div>
             <div class="contacts">
                 <img src="assets/call-calling.svg" alt="call">
-                <a href="tel:+380951546753" id="openModalBtn">Контакти</a>
+                <a href="tel:+380951546753" id="openDialogBtn">Контакти</a>
+            </div>
+
+            <!-- Dialog Structure -->
+            <div id="contactsDialog" class="dialog">
+                <div class="dialog-content">
+                    <span class="close">&times;</span>
+                    <div class="dialog-body">
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>Розташування</p>
+                        <p>м.Черкаси, Вул. 30-річчя перемоги, 5/1</p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i>Телефони та месенджери</p>
+                        <img src="assets/IMG_9725 1.png" alt="qr-code">
+                        <p>+380951546753</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -39,7 +54,7 @@
                 <div class="title">
                     <h3>КАТАЛОГ</h3>
                 </div>
-                <div class="sidebar-card">
+                <div class="sidebar-card" data-target="paper-bags">
                     <div class="sidebar-image">
                         <img src="assets/Group%203.png" alt="sidebar_image1">
                     </div>
@@ -48,7 +63,7 @@
                     </div>
                 </div>
 
-                <div class="sidebar-card">
+                <div class="sidebar-card" data-target="drink-cups">
                     <div class="sidebar-image">
                         <img src="assets/Intersect.png" alt="sidebar_image2">
                     </div>
@@ -57,7 +72,7 @@
                     </div>
                 </div>
 
-                <div class="sidebar-card">
+                <div class="sidebar-card" data-target="drink-accessories">
                     <div class="sidebar-image">
                         <img src="assets/1.png" alt="sidebar_image3">
                     </div>
@@ -93,7 +108,6 @@
         </div>
 
         <div class="tablet-version">
-
 
             <div class="header-section" onclick="toggleTiles()">
                 <span>Пакети паперові для Випічки</span>
@@ -1250,7 +1264,7 @@
             </div>
 
 
-            <div class="packagesForBaking">
+            <div class="packagesForBaking" id="paper-bags">
                 <h2>Пакети для Випічки</h2>
 
                 <div class="tiles">
@@ -1645,7 +1659,7 @@
                 </div>
             </div>
 
-            <div class="glassesForDrinks">
+            <div class="glassesForDrinks" id="drink-cups">
                 <h2>Стаканчики для напоїв</h2>
 
                 <div class="tiles_new-cup">
@@ -1889,7 +1903,7 @@
 
                 </div>
             </div>
-            <div class="accessoriesForDrinks">
+            <div class="accessoriesForDrinks" id="drink-accessories">
                 <h2>Аксесуари для напоїв</h2>
 
                 <div class="tiles_new-cup">

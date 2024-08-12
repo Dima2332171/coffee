@@ -264,3 +264,40 @@ function accessoriesToggleTiles() {
     }
 }
 
+document.querySelectorAll('.sidebar-card').forEach(card => {
+    card.addEventListener('click', function() {
+        const targetId = this.getAttribute('data-target');
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+// Get the dialog
+let dialog = document.getElementById("contactsDialog");
+
+// Get the button that opens the dialog
+let btn = document.getElementById("openDialogBtn");
+
+// Get the <span> element that closes the dialog
+let span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the dialog
+btn.onclick = function() {
+    dialog.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the dialog
+span.onclick = function() {
+    dialog.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the dialog, close it
+window.onclick = function(event) {
+    if (event.target == dialog) {
+        dialog.style.display = "none";
+    }
+}
+

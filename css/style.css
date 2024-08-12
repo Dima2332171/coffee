@@ -11,6 +11,9 @@ body {
     background-color: #d7c2af;
 }
 
+
+
+
 .custom-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -36,7 +39,63 @@ header {
     display: flex;
     align-items: center;
 }
+/* The Dialog (background) */
+.dialog {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /*height: 100%;*/
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
+/* Dialog Content */
+.dialog-content {
+    background-color: #b0bcc1; /* Same color as the card in the image */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+    color: #000; /* Text color */
+    font-family: 'Arial', sans-serif; /* Replace with your preferred font */
+}
+
+/* The Close Button */
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Icon and Text Styling */
+.dialog-body p {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.dialog-body img {
+    margin: 10px 0;
+}
+
+.dialog-body p img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
 .contacts img {
     margin-right: 10px;
     height: 24px;
