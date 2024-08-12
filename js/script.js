@@ -236,3 +236,31 @@ function myCloseModal() {
     modal.style.display = "none";
 }
 
+function toggleTiles() {
+    let tilesContainer = document.getElementById("tilesContainer");
+    if (tilesContainer.classList.contains("show")) {
+        tilesContainer.classList.remove("show");
+    } else {
+        tilesContainer.classList.add("show");
+    }
+}
+
+function glassesToggleTiles() {
+    let tilesContainer = document.getElementById("glassesTilesContainer");
+    if (tilesContainer.classList.contains("show")) {
+        tilesContainer.classList.remove("show");
+    } else {
+        tilesContainer.classList.add("show");
+    }
+}
+
+function accessoriesToggleTiles() {
+    let tilesContainer = document.getElementById("accessoriesTilesContainer");
+    if (tilesContainer.classList.contains("show")) {
+        tilesContainer.classList.remove("show");
+    } else {
+        tilesContainer.classList.add("show");
+    }
+}
+
+ч

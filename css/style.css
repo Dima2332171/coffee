@@ -748,7 +748,38 @@ footer{
     }
 }
 
-@media (max-width: 960px) {
+.tiles-container {
+    display: none; /* Скрыть блок по умолчанию */
+}
+
+.glassesTiles-container{
+    display: none;
+}
+
+.accessoriesTiles-container{
+    display: none;
+}
+
+/* Показать блок при нажатии на кнопку */
+.tiles-container.show {
+    display: flex;
+    flex-direction: column;
+}
+.glassesTiles-container.show{
+    display: flex;
+    flex-direction: column;
+}
+.accessoriesTiles-container.show{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-section{
+    display: none;
+}
+
+
+@media (max-width: 1000px) {
     .sidebar{
         display: none;
     }
@@ -758,5 +789,52 @@ footer{
         justify-content: center;
         margin-top: 40px;
     }
+    .custom-container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
 
+    .header-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #A9B9C0;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        color: #000;
+        cursor: pointer; /* Сделать весь блок кликабельным */
+    }
+
+    .dropdown-icon {
+        width: 15px;
+        height: 15px;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        transform: rotate(45deg);
+    }
+
+    .header-section span {
+        margin: 0;
+    }
+
+    .header-section button {
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        color: inherit;
+        cursor: pointer;
+    }
+    .packagesForBaking{
+        display: none;
+    }
+
+    .glassesForDrinks{
+        display: none;
+    }
+
+    .accessoriesForDrinks{
+        display: none;
+    }
 }
