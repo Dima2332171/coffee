@@ -779,7 +779,7 @@ footer{
 }
 
 
-@media (max-width: 1000px) {
+@media (min-width: 769px) and (max-width: 1000px) {
     .sidebar{
         display: none;
     }
@@ -845,15 +845,61 @@ footer{
         color: inherit;
         cursor: pointer;
     }
-    .packagesForBaking{
+    .catalog-block{
         display: none;
+    }
+}
+
+@media (min-width: 391px) and (max-width: 768px) {
+    .sidebar{
+        display: none;
+    }
+    .custom-container {
+        max-width: 340px;
+        margin: 0 auto;
     }
 
-    .glassesForDrinks{
-        display: none;
+    .tile{
+        width: 30%;
     }
 
-    .accessoriesForDrinks{
+    .tile_new-cup{
+        width: 30%;
+    }
+
+    .tile_slider-cup{
+        width: 30%;
+    }
+
+    .tile_hide{
+        width: 30%;
+    }
+
+}
+
+@media (min-width: 1px) and (max-width: 390px) {
+    .sidebar{
         display: none;
     }
+    .custom-container {
+        max-width: 340px;
+        margin: 0 auto;
+    }
+    .tile{
+        width: 80%;
+    }
+
+    .tile_new-cup{
+        width: 80%;
+    }
+
+    .tile_slider-cup{
+        width: 80%;
+    }
+
+    .tile_hide{
+        width: 80%;
+    }
+
+
 }
