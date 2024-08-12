@@ -917,7 +917,19 @@ footer{
         max-width: 340px;
         margin: 0 auto;
     }
-
+    .buttons-container {
+        display: block;
+    }
+    .one-line, .second-line{
+        display: block;
+        width: 100%;
+    }
+    .pay{
+        width: 100%;
+    }
+    .brand{
+        width: 100%;
+    }
     .main-content{
         width: 100%;
         display: flex;
@@ -972,6 +984,18 @@ footer{
     .tile_hide{
         width: 80%;
     }
-
+    .buttons-container {
+        display: block;
+    }
+    .one-line, .second-line{
+        display: block;
+        width: 100%;
+    }
+    .pay{
+        width: 100%;
+    }
+    .brand{
+        width: 100%;
+    }
 
 }
