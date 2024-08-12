@@ -237,6 +237,15 @@ function myCloseModal() {
     modal.style.display = "none";
 }
 
+function toggleTilesForMobiles(){
+    let tilesContainer = document.getElementById("tilesContainerForMobile");
+    if (tilesContainer.classList.contains("show")) {
+        tilesContainer.classList.remove("show");
+    } else {
+        tilesContainer.classList.add("show");
+    }
+}
+
 function toggleTiles() {
     let tilesContainer = document.getElementById("tilesContainer");
     if (tilesContainer.classList.contains("show")) {
@@ -296,7 +305,7 @@ span.onclick = function() {
 
 // When the user clicks anywhere outside of the dialog, close it
 window.onclick = function(event) {
-    if (event.target == dialog) {
+    if (event.target === dialog) {
         dialog.style.display = "none";
     }
 }

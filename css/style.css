@@ -998,4 +998,44 @@ footer{
         width: 100%;
     }
 
+    .header-section span {
+        margin: 0;
+    }
+
+    .header-section button {
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        color: inherit;
+        cursor: pointer;
+    }
+    .catalog-block{
+        display: none;
+    }
+    .header-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #A9B9C0;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        color: #000;
+        cursor: pointer; /* Сделать весь блок кликабельным */
+        margin-bottom: 34px;
+    }
+
+    .tablet-version{
+        margin-top: 34px;
+    }
+
+    .dropdown-icon {
+        width: 15px;
+        height: 15px;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        transform: rotate(45deg);
+    }
+
 }
