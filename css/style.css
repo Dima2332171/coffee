@@ -859,6 +859,12 @@ footer{
         margin: 0 auto;
     }
 
+    .main-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
     .tile{
         width: 30%;
     }
@@ -880,6 +886,13 @@ footer{
 @media (min-width: 1px) and (max-width: 390px) {
     .sidebar{
         display: none;
+    }
+
+    .main-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
     }
     .custom-container {
         max-width: 340px;
