@@ -169,14 +169,26 @@ function showImage(index, type) {
     if (type === 'cup') {
         const imgElement = document.getElementById('cup');
         imgElement.src = imagesCup[index];
+    } else  if (type === 'cup-tablet') {
+        const imgElement = document.getElementById('cup-tablet');
+        imgElement.src = imagesCup[index];
     } else if (type === 'lid') {
         const imgLid = document.getElementById('lid');
+        imgLid.src = imagesLid[index];
+    }else if (type === 'lid-tablet') {
+        const imgLid = document.getElementById('lid-tablet');
         imgLid.src = imagesLid[index];
     } else if(type === 'holder'){
         const imgHolder = document.getElementById('holder');
         imgHolder.src = imageHolder[index];
+    } else if(type === 'holder-tablet'){
+        const imgHolder = document.getElementById('holder-tablet');
+        imgHolder.src = imageHolder[index];
     } else if(type === 'tissue'){
         const imgTissue = document.getElementById('tissue');
+        imgTissue.src = imageTissue[index];
+    } else if(type === 'tissue-tablet'){
+        const imgTissue = document.getElementById('tissue-tablet');
         imgTissue.src = imageTissue[index];
     }
 }
@@ -185,15 +197,30 @@ function nextImage(type) {
     if (type === 'cup') {
         currentCupIndex = (currentCupIndex + 1) % imagesCup.length;
         showImage(currentCupIndex, 'cup');
+    } else if (type === 'cup-tablet') {
+        currentCupIndex = (currentCupIndex + 1) % imagesCup.length;
+        showImage(currentCupIndex, 'cup-tablet');
     } else if (type === 'lid') {
         currentLidIndex = (currentLidIndex + 1) % imagesLid.length;
         showImage(currentLidIndex, 'lid');
+    }else if (type === 'lid-tablet') {
+        currentLidIndex = (currentLidIndex + 1) % imagesLid.length;
+        showImage(currentLidIndex, 'lid-tablet');
     } else if (type === 'holder'){
         currentHolderIndex = (currentHolderIndex + 1) % imageHolder.length;
         showImage(currentHolderIndex, 'holder')
+    } else if(type === 'holder-tablet'){
+        currentHolderIndex = (currentHolderIndex + 1) % imageHolder.length;
+        showImage(currentHolderIndex, 'holder-tablet')
+    } else if(type==='tissue-tablet'){
+        currentTissueIndex = (currentTissueIndex + 1) % imageTissue.length;
+        showImage(currentTissueIndex, 'tissue-tablet')
     } else if (type === 'tissue'){
         currentTissueIndex = (currentTissueIndex + 1) % imageTissue.length;
         showImage(currentTissueIndex, 'tissue')
+    } else if (type === 'tissue-tablet'){
+        currentTissueIndex = (currentTissueIndex + 1) % imageTissue.length;
+        showImage(currentTissueIndex, 'tissue-tablet')
     }
 }
 
@@ -201,16 +228,27 @@ function prevImage(type) {
     if (type === 'cup') {
         currentCupIndex = (currentCupIndex - 1 + imagesCup.length) % imagesCup.length;
         showImage(currentCupIndex, 'cup');
-    }
-    else if (type === 'lid') {
+    } else  if (type === 'cup-tablet') {
+        currentCupIndex = (currentCupIndex - 1 + imagesCup.length) % imagesCup.length;
+        showImage(currentCupIndex, 'cup-tablet');
+    } else if (type === 'lid') {
         currentLidIndex = (currentLidIndex - 1 + imagesLid.length) % imagesLid.length;
         showImage(currentLidIndex, 'lid');
+    } else if (type === 'lid-tablet') {
+        currentLidIndex = (currentLidIndex - 1 + imagesLid.length) % imagesLid.length;
+        showImage(currentLidIndex, 'lid-tablet');
     } else if(type==='holder'){
         currentHolderIndex = (currentHolderIndex - 1 + imageHolder.length) % imageHolder.length;
         showImage(currentHolderIndex, 'holder');
+    } else if(type==='holder-tablet'){
+        currentHolderIndex = (currentHolderIndex - 1 + imageHolder.length) % imageHolder.length;
+        showImage(currentHolderIndex, 'holder-tablet');
     } else if(type==='tissue'){
         currentTissueIndex = (currentTissueIndex - 1 + imageTissue.length) % imageTissue.length;
         showImage(currentTissueIndex, 'tissue');
+    } else if(type==='tissue-tablet'){
+        currentTissueIndex = (currentTissueIndex - 1 + imageTissue.length) % imageTissue.length;
+        showImage(currentTissueIndex, 'tissue-tablet');
     }
 }
 
