@@ -201,7 +201,8 @@ function prevImage(type) {
     if (type === 'cup') {
         currentCupIndex = (currentCupIndex - 1 + imagesCup.length) % imagesCup.length;
         showImage(currentCupIndex, 'cup');
-    } else if (type === 'lid') {
+    }
+    else if (type === 'lid') {
         currentLidIndex = (currentLidIndex - 1 + imagesLid.length) % imagesLid.length;
         showImage(currentLidIndex, 'lid');
     } else if(type==='holder'){

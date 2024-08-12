@@ -804,6 +804,11 @@ footer{
         font-size: 20px;
         color: #000;
         cursor: pointer; /* Сделать весь блок кликабельным */
+        margin-bottom: 34px;
+    }
+
+    .tablet-version{
+        margin-top: 34px;
     }
 
     .dropdown-icon {
@@ -813,7 +818,21 @@ footer{
         border-bottom: 2px solid black;
         transform: rotate(45deg);
     }
+    .tile{
+        width: 30%;
+    }
 
+    .tile_new-cup{
+        width: 30%;
+    }
+
+    .tile_slider-cup{
+        width: 30%;
+    }
+
+    .tile_hide{
+        width: 30%;
+    }
     .header-section span {
         margin: 0;
     }
