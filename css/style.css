@@ -22,6 +22,12 @@ body {
 header {
     background-color: #A8B9C0;
     padding: 10px 0;
+    position: fixed; /* Fixes the header at the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visibility */
 }
 
 .header-content {
@@ -695,7 +701,7 @@ a{
 .colors_new-cup {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 10px 0;
 }
 
 .color-btn_new-cup {
@@ -735,7 +741,6 @@ a{
 footer{
     background-color: #A8B9C0;
     width: 100%;
-    height: 310px;
     padding-top: 50px;
 }
 .photo-cert{
@@ -1042,4 +1047,19 @@ footer{
         width: 100%;
     }
 
+    .tile_hide{
+        display: none;
+    }
+    .tiles{
+        justify-content: center;
+    }
+    .footer-block{
+        display: block;
+    }
+    .text-footer{
+        width: 100%;
+    }
+    .text-footer p{
+        margin-bottom: 0;
+    }
 }

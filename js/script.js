@@ -15,7 +15,16 @@ window.onload = function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.color-btn');
+    const newButtons = document.querySelectorAll('.color-btn_new-cup');
     const cupImage = document.getElementById('cup-image');
+    const newCupImage = document.getElementById('cup-color-tablet');
+
+    newButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const color = this.getAttribute('data-color');
+            newCupImage.src = `assets/cup_${color}.png`;
+        });
+    });
 
     buttons.forEach(button => {
         button.addEventListener('click', function() {
