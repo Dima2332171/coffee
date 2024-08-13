@@ -912,7 +912,7 @@ footer{
     }
 }
 
-@media (min-width: 405px) and (max-width: 768px) {
+@media (min-width: 417px) and (max-width: 768px) {
     .sidebar{
         display: none;
     }
@@ -957,7 +957,7 @@ footer{
 
 }
 
-@media (min-width: 1px) and (max-width: 404px) {
+@media (min-width: 1px) and (max-width: 416px) {
     .sidebar{
         display: none;
     }
