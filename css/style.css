@@ -36,6 +36,11 @@ header {
     padding: 0 20px;
 }
 
+.header-content a{
+    text-decoration: none;
+    color: black;
+}
+
 .logo img {
     height: 50px;
 }
@@ -48,7 +53,7 @@ header {
 .dialog {
     display: none;
     position: fixed;
-    z-index: 3;
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
@@ -459,21 +464,25 @@ li{
 .custom-button {
     background-color: #A9B9C0; /* Цвет фона */
     color: #000; /* Цвет текста */
-    padding: 10px 20px;
-    border: none;
+    padding: 8px 20px;
     border-radius: 30px; /* Закругленные углы */
     cursor: pointer;
     text-align: center;
+    border: 1px solid #ffffff;
+
 }
 
-.custom-button:hover {
-    background-color: #8FA0A7; /* Цвет при наведении */
-}
-
-a{
+.custom-button a{
     text-decoration: none;
     color: black;
 }
+
+.custom-button:hover {
+    background-color: #ffffff; /* Цвет при наведении */
+    border: 1px solid #A9B9C0;
+}
+
+
 
 .front img {
     /*width: 100%;*/
