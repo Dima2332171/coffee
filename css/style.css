@@ -1051,6 +1051,10 @@ footer{
     .tiles{
         justify-content: center;
     }
+
+    footer{
+        margin-top: 40px;
+    }
     .footer-block{
         display: block;
     }
