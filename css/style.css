@@ -1038,4 +1038,8 @@ footer{
         transform: rotate(45deg);
     }
 
+    .image-block{
+        width: 100%;
+    }
+
 }
