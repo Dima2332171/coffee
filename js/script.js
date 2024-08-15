@@ -338,7 +338,7 @@ let dialog = document.getElementById("contactsDialog");
 let btn = document.getElementById("openDialogBtn");
 
 // Get the <span> element that closes the dialog
-let span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("dialog-close")[0];
 
 // When the user clicks on the button, open the dialog
 btn.onclick = function() {
@@ -356,4 +356,23 @@ window.onclick = function(event) {
         dialog.style.display = "none";
     }
 }
+
+
+document.querySelectorAll('.card-text, .card_slider-cup').forEach(card => {
+    const frontSide = card.querySelector('.front_new-cup, .front_slider-cup');
+    const backSide = card.querySelector('.back_new-cup, .back_slider-cup');
+
+    // Наведение на текст для переворота карточки
+    card.addEventListener('mouseover', (e) => {
+        const isTextHovered = e.target.tagName === 'P' || e.target.tagName === 'DIV';
+        if (isTextHovered) {
+            card.classList.add('flip');
+        }
+    });
+
+    // Покидание задней части карточки для возврата к фронтовой стороне
+    card.addEventListener('mouseleave', (e) => {
+        card.classList.remove('flip');
+    });
+});
 

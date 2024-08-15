@@ -58,7 +58,7 @@ header {
 .main-content{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     margin-top: 40px;
 }
 
@@ -99,6 +99,13 @@ img{
 .sidebar-image img:hover{
     transform: scale(1.3);
 }
+
+
+
+/*доделать*/
+/*.sidebar-text{*/
+/*    margin: 20px 0;*/
+/*}*/
 
 .second-part{
     margin-top: 50px;
@@ -153,18 +160,6 @@ swiper-slide img {
 
 
 
-
-
-
-
-.main-section{
-    display: flex;
-    flex-direction: column;
-}
-
-.two-section {
-    display: flex;
-}
 .question-block {
     text-align: center;
     margin-top: 50px;
@@ -251,88 +246,11 @@ li{
 .expanded .button-content {
     display: block;
 }
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 3;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-    font-family: "Inter", sans-serif;
-}
 
-.modal-content {
-    background-color: #d7c2af;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 660px;
-    border-radius: 10px;
-    text-align: center;
-}
 
-.close {
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    display: flex;
-     justify-content: end;
-}
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-content h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.modal-content p {
-    margin: 5px 0;
-}
-
-.qr-code {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.qr-code img {
-    width: 150px;
-    height: 150px;
-}
-
-.qr-code p {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
 .clients-block{
     margin-top: 50px;
-}
-
-.clients-section {
-    text-align: center;
-}
-
-.clients-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
 }
 
 .clients-logos {
@@ -349,6 +267,8 @@ li{
     border-radius: 50%;
     object-fit: cover;
 }
+
+
 
 .catalog-block{
     margin-top: 50px;
@@ -427,8 +347,6 @@ li{
     border: 1px solid #A9B9C0;
 }
 
-
-
 .front img {
     /*width: 100%;*/
     height: auto;
@@ -446,29 +364,12 @@ li{
     margin: 0;
 }
 
-.color-selection {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 16px;
-}
 
-.color-selection .color {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-}
 
 .cup-image {
     /*width: 150px;*/
     height: auto;
 }
-
-.cup-info {
-    margin-top: 16px;
-}
-
 
 
 
@@ -708,52 +609,7 @@ footer{
 }
 
 
-.myModal {
-    display: none; /* Скрываем модальное окно по умолчанию */
-    position: fixed;
-    z-index: 3;
-    padding-top: 0; /* Убираем отступ сверху */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; /* Отключаем прокрутку */
-    background-color: rgba(0, 0, 0, 0.9);
-}
 
-/* Стили для изображения внутри модального окна */
-.myModal-content {
-    margin: auto;
-    display: block;
-    height: 100vh; /* Высота изображения равна высоте экрана */
-    max-height: 100vh; /* Максимальная высота изображения — 100% высоты экрана */
-    width: auto; /* Автоматическая ширина для сохранения пропорций */
-    max-width: 100%; /* Максимальная ширина — 100%, чтобы не выходило за рамки экрана */
-}
-
-/* Закрывающий крестик */
-.myClose {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.myClose:hover,
-.myClose:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Для анимации модального окна (увеличение изображения) */
-.myModal-content {
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
 
 @keyframes zoom {
     from {
@@ -1020,7 +876,71 @@ footer{
     }
 }
 
-/* The Dialog (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    font-family: "Inter", sans-serif;
+}
+
+.modal-content {
+    background-color: #d7c2af;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 660px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    margin: 5px 0;
+}
+
+.qr-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.qr-code img {
+    width: 150px;
+    height: 150px;
+}
+
+.qr-code p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
 .dialog {
     display: none;
     position: fixed;
@@ -1032,7 +952,6 @@ footer{
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Dialog Content */
 .dialog-content {
     background-color: #b0bcc1; /* Same color as the card in the image */
     margin: 15% auto;
@@ -1045,22 +964,22 @@ footer{
     font-family: 'Arial', sans-serif; /* Replace with your preferred font */
 }
 
-/* The Close Button */
-.close {
+
+.dialog-close {
     color: #000;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.dialog-close:hover,
+.dialog-close:focus {
     color: #aaa;
     text-decoration: none;
     cursor: pointer;
 }
 
-/* Icon and Text Styling */
+
 .dialog-body p {
     margin: 10px 0;
     font-size: 18px;
@@ -1075,4 +994,52 @@ footer{
     width: 20px;
     vertical-align: middle;
     margin-right: 8px;
+}
+
+
+.myModal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 3;
+    padding-top: 0; /* Убираем отступ сверху */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Отключаем прокрутку */
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Стили для изображения внутри модального окна */
+.myModal-content {
+    margin: auto;
+    display: block;
+    height: 100vh; /* Высота изображения равна высоте экрана */
+    max-height: 100vh; /* Максимальная высота изображения — 100% высоты экрана */
+    width: auto; /* Автоматическая ширина для сохранения пропорций */
+    max-width: 100%; /* Максимальная ширина — 100%, чтобы не выходило за рамки экрана */
+}
+
+/* Закрывающий крестик */
+.myClose {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.myClose:hover,
+.myClose:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Для анимации модального окна (увеличение изображения) */
+.myModal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
 }
