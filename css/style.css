@@ -506,6 +506,7 @@ li{
     perspective: 1000px;
 }
 
+
 .card_new-cup {
     width: 100%;
     height: 100%;
@@ -520,7 +521,15 @@ li{
 .card_new-cup.rotate_new-cup {
     transform: scale3d(1,1,1) rotateY(180deg);
 }
+.side_slider-cup p{
+    margin: 0;
+    padding: 0;
+}
 
+.side_new-cup p{
+    margin: 0;
+    padding: 0;
+}
 
 
 .side_new-cup {
@@ -546,7 +555,7 @@ li{
 }
 .card_new-cup {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -957,11 +966,16 @@ footer{
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 300px;
+    width: 25%;
     border-radius: 8px;
     text-align: center;
     color: #000; /* Text color */
     font-family: 'Arial', sans-serif; /* Replace with your preferred font */
+}
+
+.dialog-body a{
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -1043,3 +1057,5 @@ footer{
     animation-name: zoom;
     animation-duration: 0.6s;
 }
+
+

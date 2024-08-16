@@ -8,30 +8,30 @@ function closeModal() {
     modal.style.display = "none";
 }
 
-window.onload = function() {
+window.onload = function () {
     setTimeout(showModal, 15000);
 }
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.color-btn');
+document.addEventListener('DOMContentLoaded', function () {
     const newButtons = document.querySelectorAll('.color-btn_new-cup');
     const cupImage = document.getElementById('cup-image');
     const newCupImage = document.getElementById('cup-color-tablet');
 
     newButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             const color = this.getAttribute('data-color');
             newCupImage.src = `assets/cup_${color}.png`;
-        });
-    });
-
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
-            const color = this.getAttribute('data-color');
             cupImage.src = `assets/cup_${color}.png`;
         });
     });
+
+    // newButtons.forEach(button => {
+    //     button.addEventListener('click', function() {
+    //         const color = this.getAttribute('data-color');
+    //         cupImage.src = `assets/cup_${color}.png`;
+    //     });
+    // });
 });
 
 function expandButton(button) {
@@ -43,6 +43,7 @@ function expandButton(button) {
     });
     button.classList.toggle('expanded');
 }
+
 // document.addEventListener('DOMContentLoaded', function () {
 //     let swiper = new Swiper('.mySwiper', {
 //         slidesPerView: 1,
@@ -73,9 +74,6 @@ swiperEl.addEventListener("autoplaytimeleft", (e) => {
 });
 
 
-
-
-
 // First card logic
 // const allSimpleImages = document.querySelectorAll('.flex-block_new-cup img');
 // allSimpleImages.forEach(img => {
@@ -91,18 +89,35 @@ swiperEl.addEventListener("autoplaytimeleft", (e) => {
 // });
 
 
-const newCupImages = document.querySelectorAll('.card_new-cup img');
+const newCupImages = document.querySelectorAll('.card_new-cup p');
+const backCard = document.querySelectorAll(".li-block");
 newCupImages.forEach(img => {
-    img.addEventListener('click', function () {
+    img.addEventListener('mousemove', function () {
         const card = img.closest('.card_new-cup');
         if (card) card.classList.add('rotate_new-cup');
     });
-
-        img.addEventListener('mouseout', function () {
+});
+backCard.forEach(img => {
+    img.addEventListener('mouseout', function () {
         const card = img.closest('.card_new-cup');
         if (card) card.classList.remove('rotate_new-cup');
     });
-});
+})
+
+const sliderCupImages = document.querySelectorAll('.card_slider-cup p');
+const sliderBackCard = document.querySelectorAll('.li-block');
+sliderCupImages.forEach(img => {
+    img.addEventListener('mousemove', function () {
+        const card = img.closest('.card_slider-cup');
+        if (card) card.classList.add('rotate_slider-cup');
+    })
+})
+sliderBackCard.forEach(img => {
+    img.addEventListener('mouseout', function () {
+        const card = img.closest('.card_slider-cup');
+        if (card) card.classList.remove('rotate_slider-cup');
+    });
+})
 
 const newCupColorButtons = document.querySelectorAll(".color-btn_new-cup");
 const newCupImage = document.getElementById("cup-color");
@@ -115,29 +130,44 @@ newCupColorButtons.forEach(button => {
 });
 
 // Second card logic
-const cardCupText = document.querySelector('.flex-block_slider-cup p');
+// For the new cup card
+// const cardCupText = document.querySelector('.flex-block_new-cup img');
+// if (cardCupText) {
+//     cardCupText.addEventListener('click', function () {
+//         const card = cardCupText.closest('.card_new-cup');
+//         if (card) card.classList.add('rotate_new-cup');
+//     });
+//
+//     cardCupText.addEventListener('mouseout', function () {
+//         const card = cardCupText.closest('.card_new-cup');
+//         if (card) card.classList.remove('rotate_new-cup');
+//     });
+// }
+//
+// // For the slider cup card
+// const cardMainText = document.querySelector('.flex-block_slider-cup p');
+// if (cardMainText) {
+//     cardMainText.addEventListener('click', function () {
+//         const card = cardMainText.closest('.card_slider-cup');
+//         if (card) card.classList.add('rotate_slider-cup');
+//     });
+//
+//     cardMainText.addEventListener('mouseout', function () {
+//         const card = cardMainText.closest('.card_slider-cup');
+//         if (card) card.classList.remove('rotate_slider-cup');
+//     });
+// }
 
-if (cardCupText) {
-    cardCupText.addEventListener('mouseover', function () {
-        const card = cardCupText.closest('.card_slider-cup');
-        if (card) card.classList.add('rotate_slider-cup');
-    });
 
-    cardCupText.addEventListener('mouseout', function () {
-        const card = cardCupText.closest('.card_slider-cup');
-        if (card) card.classList.remove('rotate_slider-cup');
-    });
-}
-
-const sliderCupButtons = document.querySelectorAll(".slider-btn_slider-cup");
-const sliderCupImage = document.getElementById("cup-image_slider-cup");
-
-sliderCupButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        const color = button.getAttribute("data-color");
-        if (sliderCupImage) sliderCupImage.src = `assets/cup_${color}.png`;
-    });
-});
+// const sliderCupButtons = document.querySelectorAll(".slider-btn_slider-cup");
+// const sliderCupImage = document.getElementById("cup-image_slider-cup");
+//
+// sliderCupButtons.forEach(button => {
+//     button.addEventListener("click", () => {
+//         const color = button.getAttribute("data-color");
+//         if (sliderCupImage) sliderCupImage.src = `assets/cup_${color}.png`;
+//     });
+// });
 
 // Image slider logic
 const imagesCup = [
@@ -178,25 +208,25 @@ function showImage(index, type) {
     if (type === 'cup') {
         const imgElement = document.getElementById('cup');
         imgElement.src = imagesCup[index];
-    } else  if (type === 'cup-tablet') {
+    } else if (type === 'cup-tablet') {
         const imgElement = document.getElementById('cup-tablet');
         imgElement.src = imagesCup[index];
     } else if (type === 'lid') {
         const imgLid = document.getElementById('lid');
         imgLid.src = imagesLid[index];
-    }else if (type === 'lid-tablet') {
+    } else if (type === 'lid-tablet') {
         const imgLid = document.getElementById('lid-tablet');
         imgLid.src = imagesLid[index];
-    } else if(type === 'holder'){
+    } else if (type === 'holder') {
         const imgHolder = document.getElementById('holder');
         imgHolder.src = imageHolder[index];
-    } else if(type === 'holder-tablet'){
+    } else if (type === 'holder-tablet') {
         const imgHolder = document.getElementById('holder-tablet');
         imgHolder.src = imageHolder[index];
-    } else if(type === 'tissue'){
+    } else if (type === 'tissue') {
         const imgTissue = document.getElementById('tissue');
         imgTissue.src = imageTissue[index];
-    } else if(type === 'tissue-tablet'){
+    } else if (type === 'tissue-tablet') {
         const imgTissue = document.getElementById('tissue-tablet');
         imgTissue.src = imageTissue[index];
     }
@@ -212,22 +242,22 @@ function nextImage(type) {
     } else if (type === 'lid') {
         currentLidIndex = (currentLidIndex + 1) % imagesLid.length;
         showImage(currentLidIndex, 'lid');
-    }else if (type === 'lid-tablet') {
+    } else if (type === 'lid-tablet') {
         currentLidIndex = (currentLidIndex + 1) % imagesLid.length;
         showImage(currentLidIndex, 'lid-tablet');
-    } else if (type === 'holder'){
+    } else if (type === 'holder') {
         currentHolderIndex = (currentHolderIndex + 1) % imageHolder.length;
         showImage(currentHolderIndex, 'holder')
-    } else if(type === 'holder-tablet'){
+    } else if (type === 'holder-tablet') {
         currentHolderIndex = (currentHolderIndex + 1) % imageHolder.length;
         showImage(currentHolderIndex, 'holder-tablet')
-    } else if(type==='tissue-tablet'){
+    } else if (type === 'tissue-tablet') {
         currentTissueIndex = (currentTissueIndex + 1) % imageTissue.length;
         showImage(currentTissueIndex, 'tissue-tablet')
-    } else if (type === 'tissue'){
+    } else if (type === 'tissue') {
         currentTissueIndex = (currentTissueIndex + 1) % imageTissue.length;
         showImage(currentTissueIndex, 'tissue')
-    } else if (type === 'tissue-tablet'){
+    } else if (type === 'tissue-tablet') {
         currentTissueIndex = (currentTissueIndex + 1) % imageTissue.length;
         showImage(currentTissueIndex, 'tissue-tablet')
     }
@@ -237,7 +267,7 @@ function prevImage(type) {
     if (type === 'cup') {
         currentCupIndex = (currentCupIndex - 1 + imagesCup.length) % imagesCup.length;
         showImage(currentCupIndex, 'cup');
-    } else  if (type === 'cup-tablet') {
+    } else if (type === 'cup-tablet') {
         currentCupIndex = (currentCupIndex - 1 + imagesCup.length) % imagesCup.length;
         showImage(currentCupIndex, 'cup-tablet');
     } else if (type === 'lid') {
@@ -246,16 +276,16 @@ function prevImage(type) {
     } else if (type === 'lid-tablet') {
         currentLidIndex = (currentLidIndex - 1 + imagesLid.length) % imagesLid.length;
         showImage(currentLidIndex, 'lid-tablet');
-    } else if(type==='holder'){
+    } else if (type === 'holder') {
         currentHolderIndex = (currentHolderIndex - 1 + imageHolder.length) % imageHolder.length;
         showImage(currentHolderIndex, 'holder');
-    } else if(type==='holder-tablet'){
+    } else if (type === 'holder-tablet') {
         currentHolderIndex = (currentHolderIndex - 1 + imageHolder.length) % imageHolder.length;
         showImage(currentHolderIndex, 'holder-tablet');
-    } else if(type==='tissue'){
+    } else if (type === 'tissue') {
         currentTissueIndex = (currentTissueIndex - 1 + imageTissue.length) % imageTissue.length;
         showImage(currentTissueIndex, 'tissue');
-    } else if(type==='tissue-tablet'){
+    } else if (type === 'tissue-tablet') {
         currentTissueIndex = (currentTissueIndex - 1 + imageTissue.length) % imageTissue.length;
         showImage(currentTissueIndex, 'tissue-tablet');
     }
@@ -284,7 +314,7 @@ function myCloseModal() {
     modal.style.display = "none";
 }
 
-function toggleTilesForMobiles(){
+function toggleTilesForMobiles() {
     let tilesContainer = document.getElementById("tilesContainerForMobile");
     if (tilesContainer.classList.contains("show")) {
         tilesContainer.classList.remove("show");
@@ -321,12 +351,12 @@ function accessoriesToggleTiles() {
 }
 
 document.querySelectorAll('.sidebar-card').forEach(card => {
-    card.addEventListener('click', function() {
+    card.addEventListener('click', function () {
         const targetId = this.getAttribute('data-target');
         const targetSection = document.getElementById(targetId);
 
         if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth' });
+            targetSection.scrollIntoView({behavior: 'smooth'});
         }
     });
 });
@@ -341,17 +371,17 @@ let btn = document.getElementById("openDialogBtn");
 let span = document.getElementsByClassName("dialog-close")[0];
 
 // When the user clicks on the button, open the dialog
-btn.onclick = function() {
+btn.onclick = function () {
     dialog.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the dialog
-span.onclick = function() {
+span.onclick = function () {
     dialog.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the dialog, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target === dialog) {
         dialog.style.display = "none";
     }
