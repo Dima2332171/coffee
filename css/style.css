@@ -890,6 +890,19 @@ footer{
     }
 }
 
+.kastyl{
+    margin-top: 78px;
+}
+
+.kastyl1{
+    margin-top: 55px;
+}
+
+.kastyl3{
+    margin-top: 125px;
+}
+
+
 .modal {
     display: none;
     position: fixed;
