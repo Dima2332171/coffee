@@ -80,10 +80,16 @@
         <div class="second-part">
             <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="false"
                               space-between="30"
-                              centered-slides="true" autoplay-delay="8000" autoplay-disable-on-interaction="false">
+                              centered-slides="true" loop="true" autoplay-delay="8000" autoplay-disable-on-interaction="false">
+
+                <!-- Original Slides -->
                 <swiper-slide><img src="assets/Columbia.png" alt="Columbia"></swiper-slide>
                 <swiper-slide><img src="assets/burundi_kayanza.png" alt="burundi"></swiper-slide>
                 <swiper-slide><img src="assets/Brazil.png" alt="Brazil"></swiper-slide>
+
+
+
+                <!-- Progress Indicator -->
                 <div class="autoplay-progress" slot="container-end">
                     <svg viewBox="0 0 48 48">
                         <circle cx="24" cy="24" r="20"></circle>

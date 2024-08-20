@@ -26,12 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // newButtons.forEach(button => {
-    //     button.addEventListener('click', function() {
-    //         const color = this.getAttribute('data-color');
-    //         cupImage.src = `assets/cup_${color}.png`;
-    //     });
-    // });
 });
 
 function expandButton(button) {
@@ -44,24 +38,6 @@ function expandButton(button) {
     button.classList.toggle('expanded');
 }
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     let swiper = new Swiper('.mySwiper', {
-//         slidesPerView: 1,
-//         loop: true,
-//         autoplay: {
-//             delay: 10000,
-//             disableOnInteraction: false,
-//         },
-//         pagination: {
-//             el: '.swiper-pagination',
-//             clickable: true,
-//         },
-//         navigation: {
-//             nextEl: '.swiper-button-next',
-//             prevEl: '.swiper-button-prev',
-//         },
-//     });
-// });
 
 const progressCircle = document.querySelector(".autoplay-progress svg");
 const progressContent = document.querySelector(".autoplay-progress span");
@@ -73,20 +49,6 @@ swiperEl.addEventListener("autoplaytimeleft", (e) => {
     progressContent.textContent = `${Math.ceil(time / 1000)}s`;
 });
 
-
-// First card logic
-// const allSimpleImages = document.querySelectorAll('.flex-block_new-cup img');
-// allSimpleImages.forEach(img => {
-//     img.addEventListener('click', function () {
-//         const card = img.closest('.card');
-//         if (card) card.classList.add('rotate');
-//     });
-//
-//     img.addEventListener('mouseout', function () {
-//         const card = img.closest('.card');
-//         if (card) card.classList.remove('rotate');
-//     });
-// });
 
 
 const newCupImages = document.querySelectorAll('.card_new-cup p');
@@ -129,45 +91,6 @@ newCupColorButtons.forEach(button => {
     });
 });
 
-// Second card logic
-// For the new cup card
-// const cardCupText = document.querySelector('.flex-block_new-cup img');
-// if (cardCupText) {
-//     cardCupText.addEventListener('click', function () {
-//         const card = cardCupText.closest('.card_new-cup');
-//         if (card) card.classList.add('rotate_new-cup');
-//     });
-//
-//     cardCupText.addEventListener('mouseout', function () {
-//         const card = cardCupText.closest('.card_new-cup');
-//         if (card) card.classList.remove('rotate_new-cup');
-//     });
-// }
-//
-// // For the slider cup card
-// const cardMainText = document.querySelector('.flex-block_slider-cup p');
-// if (cardMainText) {
-//     cardMainText.addEventListener('click', function () {
-//         const card = cardMainText.closest('.card_slider-cup');
-//         if (card) card.classList.add('rotate_slider-cup');
-//     });
-//
-//     cardMainText.addEventListener('mouseout', function () {
-//         const card = cardMainText.closest('.card_slider-cup');
-//         if (card) card.classList.remove('rotate_slider-cup');
-//     });
-// }
-
-
-// const sliderCupButtons = document.querySelectorAll(".slider-btn_slider-cup");
-// const sliderCupImage = document.getElementById("cup-image_slider-cup");
-//
-// sliderCupButtons.forEach(button => {
-//     button.addEventListener("click", () => {
-//         const color = button.getAttribute("data-color");
-//         if (sliderCupImage) sliderCupImage.src = `assets/cup_${color}.png`;
-//     });
-// });
 
 // Image slider logic
 const imagesCup = [
