@@ -406,3 +406,7 @@ document.querySelectorAll('.card-text, .card_slider-cup').forEach(card => {
     });
 });
 
+document.addEventListener('touchstart', function() {
+    const rotatedCards = document.querySelectorAll('.rotate_slider-cup, .rotate_new-cup');
+    rotatedCards.forEach(card => card.classList.remove('rotate_slider-cup', 'rotate_new-cup'));
+});
