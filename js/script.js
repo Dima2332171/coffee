@@ -408,5 +408,12 @@ document.querySelectorAll('.card-text, .card_slider-cup').forEach(card => {
 
 document.addEventListener('touchstart', function() {
     const rotatedCards = document.querySelectorAll('.rotate_slider-cup, .rotate_new-cup');
-    rotatedCards.forEach(card => card.classList.remove('rotate_slider-cup', 'rotate_new-cup'));
+    rotatedCards.forEach(card => {
+        if (card.classList.contains('rotate_slider-cup')) {
+            card.classList.remove('rotate_slider-cup');
+        }
+        if (card.classList.contains('rotate_new-cup')) {
+            card.classList.remove('rotate_new-cup');
+        }
+    });
 });
