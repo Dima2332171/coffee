@@ -304,7 +304,7 @@ window.onclick = function (event) {
 
 
 document.addEventListener('touchstart', function(event) {
-    if (event.target.classList.contains('description')) {
+    if (event.target.classList.contains('description_slider-cup')||event.target.classList.contains('description_new-cup')) {
         console.log('I`m here')
         return;
     }
