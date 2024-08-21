@@ -215,20 +215,15 @@ function prevImage(type) {
 }
 
 function openModal(imageElement) {
-    // Получаем имя изображения без расширения
     const imageName = imageElement.alt;
-
-    // Формируем путь к новому изображению с добавлением _modal
     const modalImagePath = `assets/${imageName}_modal.png`;
 
-    // Находим модальное окно и изображение внутри него
+
     const modal = document.getElementById("myModal");
     const modalImage = document.getElementById("img01");
 
-    // Устанавливаем новое изображение в модальное окно
-    modalImage.src = modalImagePath;
 
-    // Показываем модальное окно
+    modalImage.src = modalImagePath;
     modal.style.display = "block";
 }
 
@@ -284,26 +279,22 @@ document.querySelectorAll('.sidebar-card').forEach(card => {
     });
 });
 
-// Get the dialog
+
 let dialog = document.getElementById("contactsDialog");
-
-// Get the button that opens the dialog
 let btn = document.getElementById("openDialogBtn");
-
-// Get the <span> element that closes the dialog
 let span = document.getElementsByClassName("dialog-close")[0];
 
-// When the user clicks on the button, open the dialog
+
 btn.onclick = function () {
     dialog.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the dialog
+
 span.onclick = function () {
     dialog.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the dialog, close it
+
 window.onclick = function (event) {
     if (event.target === dialog) {
         dialog.style.display = "none";
@@ -311,23 +302,6 @@ window.onclick = function (event) {
 }
 
 
-document.querySelectorAll('.card-text, .card_slider-cup').forEach(card => {
-    const frontSide = card.querySelector('.front_new-cup, .front_slider-cup');
-    const backSide = card.querySelector('.back_new-cup, .back_slider-cup');
-
-    // Наведение на текст для переворота карточки
-    card.addEventListener('mouseover', (e) => {
-        const isTextHovered = e.target.tagName === 'P' || e.target.tagName === 'DIV';
-        if (isTextHovered) {
-            card.classList.add('flip');
-        }
-    });
-
-    // Покидание задней части карточки для возврата к фронтовой стороне
-    card.addEventListener('mouseleave', (e) => {
-        card.classList.remove('flip');
-    });
-});
 
 document.addEventListener('touchstart', function() {
     const rotatedCards = document.querySelectorAll('.rotate_slider-cup, .rotate_new-cup');
