@@ -304,7 +304,7 @@ window.onclick = function (event) {
 
 
 document.addEventListener('touchstart', function(event) {
-    if (event.target.classList.contains('custom_button')) {
+    if (event.target.classList.contains('custom-button')) {
         return;
     }
     const rotatedCards = document.querySelectorAll('.rotate_slider-cup, .rotate_new-cup');
