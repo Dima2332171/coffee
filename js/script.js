@@ -303,7 +303,10 @@ window.onclick = function (event) {
 
 
 
-document.addEventListener('touchstart', function() {
+document.addEventListener('touchstart', function(event) {
+    if (event.target.classList.contains('custom_button')) {
+        return;
+    }
     const rotatedCards = document.querySelectorAll('.rotate_slider-cup, .rotate_new-cup');
     rotatedCards.forEach(card => {
         if (card.classList.contains('rotate_slider-cup')) {
